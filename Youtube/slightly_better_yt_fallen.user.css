@@ -238,8 +238,7 @@
      
      /* ANCHOR [SIDEBAR STYLING] */
      
-      #guide-content.ytd-app,
-     #background.ytd-masthead {
+      #guide-content.ytd-app{
          opacity: 1;
          background-color: rgba(255, 255, 255, 0.1);
          backdrop-filter: blur(25px) saturate(200%) contrast(90%);
