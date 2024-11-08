@@ -1,0 +1,343 @@
+/* ==UserStyle==
+@name           Googlesha
+@namespace      google.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Snesh
+@preprocessor	less
+@updateURL		https://github.com/senshastic/Gitsha/raw/refs/heads/main/css/gitsha.user.css
+@var select		gradType    "Gradient style" ["animated:Animated*", "flouss: Static", "nouss:None"]
+@var select		mosaicType    "Mosaic style" ["pink:Lollipop Pink", "citrus: Flaming Citrus", "berry:Electric Berry", "ocean:Cyber Ocean*", "forest:Electric Forest", "twilight:Neon Twilight", "drama:Dark Queen", "xmas:Christmas", "neon:Neon Yellow", "nouss:None"]
+@var select		mosaicAnim    "Mosaic animation" ["wave:Wave", "diagonal:Diagonal", "trippy: Trippy", "arches: Arches", "balloon: Balloons", "ripple: Ripples*", "noanim:None"]
+@var checkbox	grain "Grainy texture" 1
+@var color   	gradcolor1 "Gradient Color 1" rgb(8, 19, 54)
+@var color   	gradcolor2 "Gradient Color 2" rgb(26, 58, 102)
+@var color   	gradcolor3 "Gradient Color 3" rgb(43, 1, 91)
+@var color   	gradcolor4 "Gradient Color 4" rgb(122, 2, 54)
+==/UserStyle== */
+
+@-moz-document domain("google.com") {
+
+
+
+	/*SECTION [SNESHLIB - Start] */
+	/*ANCHOR [VARIABLES]*/
+	@hap				: url('https://github.com/senshastic/sneshGPT/blob/main/assets/Hap.png?raw=true');
+	@borderRadius		: 12px;
+	@creamColor			: #d0b575;
+	@creamColorMuted	: #4f4733;
+
+
+
+	/*ANCHOR [DETACHED RULESETS] */
+	@gradientBackground: {
+		background: linear-gradient(109.6deg, @gradcolor1 0%, @gradcolor2 25%, @gradcolor3 50%, @gradcolor4 100%);
+	}
+
+	@gradientAnimation: {
+		0% {
+			background-position: 0% 0%;
+		}
+		50% {
+			background-position: 100% 100%;
+		}
+		100% {
+			background-position: 0% 0%;
+		}
+	}
+
+	@buttons: {
+		background-color: rgba(5, 5, 5, .18) !important;
+		border-radius: 12px !important;
+		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.37);
+		backdrop-filter: blur(100px) saturate(110%);
+		-webkit-backdrop-filter: blur(100px);
+		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	}
+
+	@buttonsHover: {
+		background-color: rgba(5, 5, 5, 0) !important;
+		border-radius: 12px;
+		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.37);
+		backdrop-filter: blur(100px) saturate(110%);
+		-webkit-backdrop-filter: blur(100px);
+		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		transform: translateY(-4px);
+	}
+
+	@transparentButtons: {
+		border-radius: 12px !important;
+		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.37);
+		backdrop-filter: blur(100px) saturate(110%);
+		-webkit-backdrop-filter: blur(100px);
+		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	}
+
+	@buttonsFlat: {
+		border-radius: 12px !important;
+		backdrop-filter: blur(100px) saturate(110%);
+		-webkit-backdrop-filter: blur(100px);
+		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	}
+
+
+	@transparentButtonsHover: {
+		border-radius: 12px;
+		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.37);
+		-webkit-backdrop-filter: blur(100px);
+		backdrop-filter: blur(100px) saturate(110%);
+		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		transform: translateY(-4px);
+	}
+
+
+	@buttonsHoverWhite: {
+		background-color: rgba(5, 5, 5, 0) !important;
+		border-radius: 12px;
+		box-shadow: 0 8px 15px rgba(255, 255, 255, .37) !important;
+		backdrop-filter: blur(100px) saturate(110%);
+		-webkit-backdrop-filter: blur(100px);
+		transform: translateY(-4px);
+		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform box-shadow 0.3s ease-in-out;
+	}
+
+	@menuItemHover: {
+		border: 1px solid rgba(0, 204, 255, 0.6);
+		background-color: rgba(5, 5, 5, 0.35) !important;
+		box-shadow: 0 0 10px 2px rgba(0, 204, 255, 0.3);
+		transform: translateY(-2px);
+		transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+		border-radius: 12px;
+	}
+
+	@grainyTexture: {
+		content: "" !important;
+		position: absolute !important;
+		top: 0 !important;
+		left: 0 !important;
+		width: 100% !important;
+		height: 100% !important;
+		pointer-events: none !important;
+		z-index: 0 !important;
+		background: url("https://raw.githubusercontent.com/senshastic/sensha-betterer-todoist/refs/heads/main/assets/noise.svg") repeat !important;
+		opacity: 0.23 !important;
+	}
+
+	@backdrop: {
+		background-color: rgba(5, 5, 5, .18) !important;
+		border-radius: 12px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(100px) saturate(110%);
+		-webkit-backdrop-filter: blur(100px);
+		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		padding: 5px;
+	}
+	
+	@backdropSimpler: {
+		background-color: rgba(5, 5, 5, .18) !important;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(100px) saturate(110%);
+		-webkit-backdrop-filter: blur(100px);
+		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	}
+
+	@disappear: {
+		background: transparent !important;
+		border: 0px;
+		box-shadow: none;
+	}
+
+	@transparent: {
+		background: transparent;
+	}
+
+	@noise: {
+		content: "" !important;
+		background: url("https://raw.githubusercontent.com/senshastic/sensha-betterer-todoist/refs/heads/main/assets/noise.svg") repeat !important;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: fixed;
+		top: 0 !important;
+		left: 0 !important;
+		width: 100% !important;
+		height: 100% !important;
+		pointer-events: none !important;
+		z-index: -1 !important;
+		opacity: 0.23 !important;
+	}
+
+
+	@boxShadowHover: {
+		box-shadow: 0 0px 10px rgba(0, 204, 255, 0.6);
+		background-color: rgba(0, 81, 255, 0.1);
+	}
+
+	@textArea: {
+		border: 1.5px solid @creamColor !important;
+		background-color: transparent !important;
+	}
+
+	/* ANCHOR [ANIMATIONS] */
+	@hoverChannelSlide: {
+		margin-left: 10px !important;
+		transition: margin-left 0.2s ease;
+		background-color: transparent;
+	}
+
+	/* Snake */
+	@snakeTarget: {
+		position: relative;
+		padding: 16px;
+		border-radius: 18px;
+		background: rgba(0, 0, 0, 0.7);
+		z-index: 1;
+		overflow: hidden;
+	}
+
+
+	@snakeBefore: {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: inherit;
+		padding: 3px;
+		background: linear-gradient(90deg, transparent 0%, transparent 40%, white 50%, transparent 60%, transparent 100%);
+		background-size: 200% 200%;
+		animation: smoothSnakeLine 6s linear infinite;
+		-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+		mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude;
+		z-index: -1;
+	}
+
+	@keyframes smoothSnakeLine {
+		0% {
+			background-position: 0% 50%;
+		}
+		100% {
+			background-position: 200% 50%;
+		}
+	}
+
+	/*!SECTION [SNESHLIB - End]*/
+	
+	/*ANCHOR [ROOT] */
+	
+	:root{
+	--gS5jXb: @creamColor;
+	}
+	
+	/*ANCHOR [BODY & GRAIN] */
+	
+	body:not(.EIlDfe.uOat3d) when (@gradType =flouss) {
+		@gradientBackground();
+	}
+	
+	.neterror{
+		@gradientBackground();
+	}
+
+	body:not(.EIlDfe.uOat3d) when (@gradType =animated) {
+		@gradientBackground();
+		background-size: 400% 400%;
+		animation: gradientAnimation 20s ease infinite;
+	}
+
+
+	body:not(.EIlDfe.uOat3d) when (@gradType =nouss) {
+		background-color: @gradcolor1 !important;
+	}
+	
+	@keyframes gradientAnimation {
+		@gradientAnimation();
+	}
+	
+	body::before when (@grain =1) {
+		@noise();
+		z-index: 0 !important;
+	}
+	
+	
+	/*ANCHOR [GOOGLE HOMEPAGE] */
+	
+	.gb_Ea.gb_Id.gb_2d.gb_F.gb_Kc.gb_e.gb_1a.gb_Vc,
+	.c93Gbe {
+		@disappear();
+	}
+	
+	
+	input[aria-label="Google Search"]:hover,
+	input[aria-label="I'm Feeling Lucky"]:hover,
+	.gbqfba:hover {
+		@buttonsHover();
+		border: 1px solid @creamColor !important;
+	}
+	
+	
+	input[aria-label="Google Search"],
+	input[aria-label="I'm Feeling Lucky"],
+	.gbqfba {
+		@backdrop();
+		border: 1px solid @creamColor !important;
+	}
+	
+	/*ANCHOR [Profile thingy] */
+	
+	.MCcOAc,
+	.SSPGKf.aRDKUe,
+	.qLP7kc.F249q.kCsp2e.PIlMcf{
+		@disappear();
+	}
+	
+	.aRDKUe .Lvwayc,
+	.emcav .RNNXgb,
+	.RNNXgb,
+	.aRDKUe .bMnvr {
+		@backdrop();
+	}
+	
+	.XB27pc.y5Iqsb.da1DUb.jFfZdd.Dn5Ezd{
+		@backdrop();
+	}
+	
+	.XB27pc.y5Iqsb.da1DUb.jFfZdd.Dn5Ezd:hover{
+		@buttonsHover();
+	}
+	
+	
+	
+	.aajZCb{
+		@backdropSimpler();
+	}
+	
+	
+	.sbhl{
+		@disappear();
+	}
+	.eIPGRd:hover{
+		margin-top: 5px;
+		padding: 5px;
+		@menuItemHover();
+	}
+	
+	
+	/*ANCHOR [TOOLTIPS] */
+	div[style="background: rgb(32, 33, 36);border: 1px solid rgb(60, 64, 67);color: rgb(189, 193, 198);display: block;font-size: 11px;font-weight: bold;height: 29px;left: 715.5px;line-height: 29px;padding: 0px 10px;position: absolute;text-align: center;top: 426px;white-space: nowrap;visibility: visible;z-index: 2000;box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;box-sizing: border-box;transition: opacity 0.13s;"]{
+		@backdrop();
+	}
+	
+	.gb_zc{
+		@backdrop();
+	}
+	
+	.EIlDfe.uOat3d{
+		@disappear();
+	}
+	/*ANCHOR [SEARCH RESULTS] */
+
+}
