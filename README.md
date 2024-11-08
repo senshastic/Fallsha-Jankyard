@@ -1,4 +1,4 @@
-# Snesh's little CSS (and JS) fourre-tout 
+# Snesh and Fallen's little CSS (and JS) fourre-tout 
 
 ## This is my mess and shouldn't be public tbh 
 
