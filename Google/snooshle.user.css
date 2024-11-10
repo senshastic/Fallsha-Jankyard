@@ -10,10 +10,14 @@
 @var select		mosaicType    "Mosaic style" ["pink:Lollipop Pink", "citrus: Flaming Citrus", "berry:Electric Berry", "ocean:Cyber Ocean*", "forest:Electric Forest", "twilight:Neon Twilight", "drama:Dark Queen", "xmas:Christmas", "neon:Neon Yellow", "nouss:None"]
 @var select		mosaicAnim    "Mosaic animation" ["wave:Wave", "diagonal:Diagonal", "trippy: Trippy", "arches: Arches", "balloon: Balloons", "ripple: Ripples*", "noanim:None"]
 @var checkbox	grain "Grainy texture" 1
-@var color   	gradcolor1 "Gradient Color 1" rgb(8, 19, 54)
-@var color   	gradcolor2 "Gradient Color 2" rgb(26, 58, 102)
-@var color   	gradcolor3 "Gradient Color 3" rgb(43, 1, 91)
-@var color   	gradcolor4 "Gradient Color 4" rgb(122, 2, 54)
+@var color   	gradcolor1 "Gradient Color 1" rgb(1, 1, 30)
+@var color   	gradcolor2 "Gradient Color 2" rgb(5, 1, 21)
+@var color   	gradcolor3 "Gradient Color 3" rgb(26, 26, 43)
+@var color   	gradcolor4 "Gradient Color 4" rgb(0, 0, 35)
+
+
+
+
 ==/UserStyle== */
 
 @-moz-document domain("google.com") {
@@ -286,6 +290,23 @@
 		border: 1px solid @creamColor !important;
 	}
 	
+	/*ANCHOR [GOOGLE HOMEPAGE SEARCH BAR DROPDOWN] */
+	
+	.WggQGd{
+		color: @creamColor;
+	}
+	
+	.eIPGRd{
+		margin: 5px;
+	}
+	
+	.eIPGRd:hover{
+		margin: 5px;
+		box-shadow: 0 0 3px rgba(255, 255, 255, 0.3) !important;
+		@hoverChannelSlide();
+	}
+	
+	
 	/*ANCHOR [Profile thingy] */
 	
 	.MCcOAc,
@@ -319,11 +340,7 @@
 	.sbhl{
 		@disappear();
 	}
-	.eIPGRd:hover{
-		margin-top: 5px;
-		padding: 5px;
-		@menuItemHover();
-	}
+	
 	
 	
 	/*ANCHOR [TOOLTIPS] */
@@ -339,5 +356,91 @@
 		@disappear();
 	}
 	/*ANCHOR [SEARCH RESULTS] */
+	
+	
+	.sfbg {
+		@backdrop();
+	}
+	
+	.sBbkle{
+		@backdropSimpler();
+	}
+	
+	div[jsname="bVqjv"]:hover{
+		@buttonsHover();
+	}
+	
+	[selected].YmvwI:hover{
+		background-color: rgba(5, 5, 5, 0) !important;
+		border-radius: 0px;
+		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.37);
+		backdrop-filter: blur(100px) saturate(110%);
+		-webkit-backdrop-filter: blur(100px);
+		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		transform: translateY(0px);
+	}
+	
+	
+	.dG2XIf,
+	.Ww4FFb,
+	.eFM0qc.BCF2pd,
+	.appbar, 
+	.sfbg, 
+	.Lu57id,
+	.p8Jhnd,
+	.f6F9Be {
+		@disappear();
+	}
+	
+	.p8Jhnd:hover{
+		@buttonsHover();
+	}
+	
+	.UivI7b,
+	.WNN1b {
+		@backdrop();
+	}
+	
+	.UivI7b:hover{
+		@buttonsHover();
+	}
+	
+	/*ANCHOR [IMAGE SEARCH RESULTS] */
+	.wH6SXe {
+		@disappear();
+	}
+	
+	div[jsname="dTDiAc"]{
+		@backdrop();
+	}
+	
+	div[jsname="dTDiAc"]:hover {
+		@boxShadowHover();
+	}
+	
+	/*ANCHOR [SEARCH WEBSITE] */
+	
+	input[jsname="YPqjbf"]{
+		@textArea();
+	}
+	
+	g-flat-button{
+		border: none !important;
+	}
+	
+	.DYjfCf:hover{
+		@buttonsHover();
+	}
+	
+	/*ANCHOR [ABOUT THIS LOCATION] */
+	
+	.qk7LXc{
+		@backdrop();
+	}
+	
+	g-raised-button:hover{
+		@buttonsHover();
+	}
+
 
 }
