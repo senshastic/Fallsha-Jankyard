@@ -441,6 +441,17 @@
 	g-raised-button:hover{
 		@buttonsHover();
 	}
+	/*ANCHOR [TRANSLATE] */
+	
+	.cm5a3b{	
+		@backdrop();
+		padding: 0px !important;
+		color: @creamColor;
+	}
+	
+	#tw-target{
+		@backdrop();
+	}
 
 
 }
