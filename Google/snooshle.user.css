@@ -234,7 +234,8 @@
 	
 	:root{
 	--gS5jXb: @creamColor;
-	}
+    --XKMDxc: transparent;
+	} 
 	
 	/*ANCHOR [BODY & GRAIN] */
 	
@@ -404,6 +405,26 @@
 	.UivI7b:hover{
 		@buttonsHover();
 	}
+    
+    .osrp-blk,
+    .uais2d {
+        @backdrop();
+    }
+    
+    .KcXNxb{
+        @disappear();
+    }
+    
+    .niO4u,
+    .rXoM2c .niO4u {
+        @buttons();
+    }
+    
+    .niO4u:hover,
+    .rXoM2c .niO4u:hover {
+        @buttonsHover();
+    }
+	
 	
 	/*ANCHOR [IMAGE SEARCH RESULTS] */
 	.wH6SXe {
@@ -487,7 +508,7 @@ div[style*="border-width: 0px 6px 6px;"][style*="border-color: rgb(32, 33, 36) t
 }
 
 c-wiz[jsrenderer="UXfCNd"][class="gETySd"][jsname="bJr0R"],
-.VuvQze .RfPPs{
+.VuvQze .RfPPs {
      @backdrop();
 }
 
@@ -496,11 +517,24 @@ c-wiz[jsrenderer="UXfCNd"][class="gETySd"][jsname="bJr0R"],
 .k4o2Hc,
 .gnU4tc,
 .Dgr5Hb,
-.uD4ibd {
+.uD4ibd,
+.aJB11e,
+.T4LgNb {
     @disappear();
 }
 
 .Dgr5Hb {
     border-top: 4px solid @creamColor;
 }
+
+
+/* Note: T4LgNb is the problem position: relative; 
+
+.SSPGKf {
+    position: relative;
+    min-height: 100%;
+} */ 
+
+
+
 }
