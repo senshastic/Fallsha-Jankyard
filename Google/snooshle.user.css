@@ -454,4 +454,53 @@
 	}
 
 
+    .vIifob{
+        @backdrop();
+    }
+    
+    
+    div[style*="background: rgb(32, 33, 36);"][style*="border: 1px solid rgb(60, 64, 67);"][style*="z-index: 2000;"]{
+        @backdrop();
+        border: solid 1px @creamColor !important;
+    
+    } 
+    
+    div[style*="border-width: 0px 6px 6px;"][style*="border-color: rgb(32, 33, 36) transparent;"][style*="position: absolute;"]{
+        @disappear();
+        background: none !important;
+    }
+    
+   div[style*="border-width: 0px 6px 6px;"][style*="border-color: rgb(60, 64, 67) transparent;"],
+div[style*="border-width: 0px 6px 6px;"][style*="border-color: rgb(32, 33, 36) transparent;"] {
+    display: none !important;
+}
+
+
+
+.UFjXSc{
+    padding: none !important;
+}
+
+
+.S8ee5{
+    @backdrop();
+}
+
+c-wiz[jsrenderer="UXfCNd"][class="gETySd"][jsname="bJr0R"],
+.VuvQze .RfPPs{
+     @backdrop();
+}
+
+.kFwPee,
+.dzz8Xc,
+.k4o2Hc,
+.gnU4tc,
+.Dgr5Hb,
+.uD4ibd {
+    @disappear();
+}
+
+.Dgr5Hb {
+    border-top: 4px solid @creamColor;
+}
 }
