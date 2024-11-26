@@ -1,6 +1,6 @@
 # Snesh and Fallen's little fourre-tout 
 
-## This is my mess and shouldn't be public tbh 
+## This is our mess and shouldn't be public tbh 
 
 <br> 
 
