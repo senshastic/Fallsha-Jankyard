@@ -293,7 +293,8 @@
 	
 	/*ANCHOR [GOOGLE HOMEPAGE SEARCH BAR DROPDOWN] */
 	
-	.WggQGd{
+	.WggQGd,
+    .PMUcxf{
 		color: @creamColor;
 	}
 	
@@ -430,11 +431,14 @@
 	}
 	
 	.UivI7b,
-	.WNN1b {
+	.WNN1b,
+    .sudu5c,
+    .MjJqGe{
 		@backdrop();
 	}
 	
-	.UivI7b:hover{
+	.UivI7b:hover,
+    .MjJqGe:hover {
 		@buttonsHover();
 	}
     
@@ -698,6 +702,13 @@ td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 25"] .SJajHc.NVbCr {
 .AaVjTc a:link{
     color: @creamColor !important;
 }
+
+body::before,
+body.EllDfe{
+    background: transparent !important;
+}
+
+
 
 
 /* Note: T4LgNb is the problem position: relative; 
