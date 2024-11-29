@@ -319,17 +319,49 @@
 	.aRDKUe .Lvwayc,
 	.emcav .RNNXgb,
 	.RNNXgb,
-	.aRDKUe .bMnvr {
+	.aRDKUe .bMnvr,
+    .DJbVFb{
 		@backdrop();
 	}
+    
+    .ZFiwCf,
+    .S8ee5.CwbYXd.wHYlTd{
+        @buttons();
+        background-color: rgba(5, 5, 5, 1) !important;
+    }
+    .ZFiwCf:hover,
+    .S8ee5.CwbYXd.wHYlTd:hover{
+        @buttonsHover();
+        background-color: rgb(1, 2, 29) !important;
+    }
+    
+    .XAFD5c,
+    .MagqMc .ZFiwCf,
+    .ZVHLgc,
+    .LJQfbb {
+        background-color: transparent !important;
+    }
 	
-	.XB27pc.y5Iqsb.da1DUb.jFfZdd.Dn5Ezd{
-		@backdrop();
+	.XB27pc.y5Iqsb.da1DUb.jFfZdd.Dn5Ezd,
+    .aRDKUe .qLP7kc .jFfZdd,
+    .jFfZdd .Dn5Ezd {
+    background-color: rgba(5, 5, 5, 0.18) !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 	}
 	
-	.XB27pc.y5Iqsb.da1DUb.jFfZdd.Dn5Ezd:hover{
-		@buttonsHover();
+    
+    .jFfZdd.Dn5Ezd:not(.XB27pc.y5Iqsb.da1DUb.jFfZdd.Dn5Ezd):hover,
+    .HyhVZe:hover {
+		@menuItemHover();
 	}
+    
+    
+    .HyhVZe{
+        @disappear();
+    }
+    
 	
 	
 	
@@ -499,7 +531,7 @@ div[style*="border-width: 0px 6px 6px;"][style*="border-color: rgb(32, 33, 36) t
 
 
 .UFjXSc{
-    padding: none !important;
+    padding: 0px !important;
 }
 
 
@@ -508,7 +540,9 @@ div[style*="border-width: 0px 6px 6px;"][style*="border-color: rgb(32, 33, 36) t
 }
 
 c-wiz[jsrenderer="UXfCNd"][class="gETySd"][jsname="bJr0R"],
-.VuvQze .RfPPs {
+.VuvQze .RfPPs,
+.Qc895c,
+.hjFrpb.PZPZlf {
      @backdrop();
 }
 
@@ -519,12 +553,150 @@ c-wiz[jsrenderer="UXfCNd"][class="gETySd"][jsname="bJr0R"],
 .Dgr5Hb,
 .uD4ibd,
 .aJB11e,
-.T4LgNb {
+.T4LgNb,
+.NEw0P,
+.SHW0Qe,
+.pKv8Zb {
     @disappear();
 }
 
 .Dgr5Hb {
     border-top: 4px solid @creamColor;
+}
+
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+td:not(.d6cvqb.BBwThe) .SJajHc.NVbCr {
+  animation: wave 1s ease-in-out infinite;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 1"] .SJajHc.NVbCr {
+  animation-delay: 0.1s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 2"] .SJajHc.NVbCr {
+  animation-delay: 0.2s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 3"] .SJajHc.NVbCr {
+  animation-delay: 0.3s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 4"] .SJajHc.NVbCr {
+  animation-delay: 0.4s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 5"] .SJajHc.NVbCr {
+  animation-delay: 0.5s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 6"] .SJajHc.NVbCr {
+  animation-delay: 0.6s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 7"] .SJajHc.NVbCr {
+  animation-delay: 0.7s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 8"] .SJajHc.NVbCr {
+  animation-delay: 0.8s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 9"] .SJajHc.NVbCr {
+  animation-delay: 0.9s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 10"] .SJajHc.NVbCr {
+  animation-delay: 1.0s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 11"] .SJajHc.NVbCr {
+  animation-delay: 1.1s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 12"] .SJajHc.NVbCr {
+  animation-delay: 1.2s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 13"] .SJajHc.NVbCr {
+  animation-delay: 1.3s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 14"] .SJajHc.NVbCr {
+  animation-delay: 1.4s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 15"] .SJajHc.NVbCr {
+  animation-delay: 1.5s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 16"] .SJajHc.NVbCr {
+  animation-delay: 1.6s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 17"] .SJajHc.NVbCr {
+  animation-delay: 1.7s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 18"] .SJajHc.NVbCr {
+  animation-delay: 1.8s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 19"] .SJajHc.NVbCr {
+  animation-delay: 1.9s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 20"] .SJajHc.NVbCr {
+  animation-delay: 2.0s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 21"] .SJajHc.NVbCr {
+  animation-delay: 2.1s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 22"] .SJajHc.NVbCr {
+  animation-delay: 2.2s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 23"] .SJajHc.NVbCr {
+  animation-delay: 2.3s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 24"] .SJajHc.NVbCr {
+  animation-delay: 2.4s;
+}
+
+td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 25"] .SJajHc.NVbCr {
+  animation-delay: 2.5s;
+}
+
+
+.GKS7s,
+.GLcBOb .pZvJc,
+.cF4V5c {
+    @backdrop();
+}
+
+.sr9hec.OvQkSb.s3IB3{
+
+    @buttonsFlat();
+}
+
+.sr9hec.OvQkSb.s3IB3:hover{
+    @buttonsHover();
+}
+
+
+.AaVjTc a:link{
+    color: @creamColor !important;
 }
 
 
