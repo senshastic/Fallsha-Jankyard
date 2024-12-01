@@ -318,6 +318,10 @@
 		@backdrop();
 		border: 1px solid @creamColor !important;
 	}
+    
+    .Maj6Tc{
+        border: 1px solid @creamColor !important;
+    }
 	
 	/*ANCHOR [GOOGLE HOMEPAGE SEARCH BAR DROPDOWN] */
 	
@@ -751,13 +755,15 @@ td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 25"] .SJajHc.NVbCr {
 
 body.EllDfe,
 .LVal7b,
-.tX9u1b:hover {
+.tX9u1b:hover,
+.REySof{
     background: transparent !important;
 }
 
 .j1ei8c:hover,
 button[jsname="ggE0ke"]:hover,
-button[jsname="xpqF6b"]:hover{
+button[jsname="xpqF6b"]:hover,
+.dvfTSb.OdANFd:hover {
     @buttonsHover();
 }
 
@@ -770,7 +776,10 @@ button[jsname="xpqF6b"]:hover{
     background: linear-gradient(to right, transparent 0%, @gradcolor1 60%, @gradcolor4);
 }
 
-
+.NQyKp.h4wEae,
+.dvfTSb.OdANFd{
+    @backdropSimpler();
+}
 
 
 
