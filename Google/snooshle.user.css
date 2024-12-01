@@ -7,8 +7,6 @@
 @preprocessor	less
 @updateURL		https://github.com/senshastic/Gitsha/raw/refs/heads/main/css/gitsha.user.css
 @var select		gradType    "Gradient style" ["animated:Animated*", "flouss: Static", "nouss:None"]
-@var select		mosaicType    "Mosaic style" ["pink:Lollipop Pink", "citrus: Flaming Citrus", "berry:Electric Berry", "ocean:Cyber Ocean*", "forest:Electric Forest", "twilight:Neon Twilight", "drama:Dark Queen", "xmas:Christmas", "neon:Neon Yellow", "nouss:None"]
-@var select		mosaicAnim    "Mosaic animation" ["wave:Wave", "diagonal:Diagonal", "trippy: Trippy", "arches: Arches", "balloon: Balloons", "ripple: Ripples*", "noanim:None"]
 @var checkbox	grain "Grainy texture" 1
 @var color   	gradcolor1 "Gradient Color 1" rgb(1, 1, 30)
 @var color   	gradcolor2 "Gradient Color 2" rgb(5, 1, 21)
@@ -242,6 +240,14 @@
 	body:not(.EIlDfe) when (@gradType =flouss) {
 		@gradientBackground();
 	}
+    
+    body[jsmodel="hspDDf "] when (@gradType =flouss) {
+		@gradientBackground();
+	}
+    
+    #yDmH0d when (@gradType =flouss) {
+		@gradientBackground();
+	}
 	
 	.neterror{
 		@gradientBackground();
@@ -252,20 +258,42 @@
 		background-size: 400% 400%;
 		animation: gradientAnimation 20s ease infinite;
 	}
+    
+    #yDmH0d when (@gradType =animated) {
+		@gradientBackground();
+		background-size: 400% 400%;
+		animation: gradientAnimation 20s ease infinite;
+	}
+    
+    body[jsmodel="hspDDf "] when (@gradType =animated) {
+		@gradientBackground();
+		background-size: 400% 400%;
+		animation: gradientAnimation 20s ease infinite;
+	}
 
 
 	body:not(.EIlDfe) when (@gradType =nouss) {
 		background-color: @gradcolor1 !important;
 	}
+    
+    body[jsmodel="hspDDf "] when (@gradType =nouss) {
+		background-color: @gradcolor1 !important;
+	}
+    
+    #yDmH0d when (@gradType =nouss) {
+		background-color: @gradcolor1 !important;
+	}
+	
 	
 	@keyframes gradientAnimation {
 		@gradientAnimation();
 	}
 	
-	body::before when (@grain =1) {
+	body:not(.EIlDfe)::before when (@grain =1) {
 		@noise();
 		z-index: 0 !important;
 	}
+    
 	
 	
 	/*ANCHOR [GOOGLE HOMEPAGE] */
@@ -326,12 +354,14 @@
 	}
     
     .ZFiwCf,
-    .S8ee5.CwbYXd.wHYlTd{
+    .S8ee5.CwbYXd.wHYlTd,
+    .nNzjpf-cS4Vcb-PvZLI-QaAxMd-haAclf{
         @buttons();
         background-color: rgba(5, 5, 5, 1) !important;
     }
     .ZFiwCf:hover,
-    .S8ee5.CwbYXd.wHYlTd:hover{
+    .S8ee5.CwbYXd.wHYlTd:hover,
+    .nNzjpf-cS4Vcb-PvZLI-QaAxMd-haAclf:hover{
         @buttonsHover();
         background-color: rgb(1, 2, 29) !important;
     }
@@ -688,8 +718,16 @@ td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 25"] .SJajHc.NVbCr {
 .cF4V5c,
 .nz9sqb.EHzcec,
 .fKmH1e,
-.nfSF8e.hdtb-tl-sel{
+.nfSF8e.hdtb-tl-sel,
+.ddlshare-dialog,
+.ea0Lbe,
+.f6GA0{
     @backdrop();
+}
+
+.f6F9Be.TrMVnc,
+.c93Gbe{
+    background-color: rgba(5, 5, 5, .18) !important;
 }
 
 .pD4qTd .yMAEcf{
@@ -711,11 +749,9 @@ td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 25"] .SJajHc.NVbCr {
     color: @creamColor !important;
 }
 
-body::before,
 body.EllDfe,
 .LVal7b,
-.tX9u1b:hover,
-.y8Jpof.pPLc9e.kpQuGf:hover{
+.tX9u1b:hover {
     background: transparent !important;
 }
 
