@@ -430,7 +430,7 @@
 		@backdrop();
 	}
 	
-	.sBbkle{
+	.rfiSsc{
 		@backdropSimpler();
 	}
 	
@@ -781,7 +781,18 @@ button[jsname="xpqF6b"]:hover,
     @backdropSimpler();
 }
 
+.ct5Ked.klitem-tr.PZPZlf{
+   @backdrop();
+}
 
+.ct5Ked.klitem-tr.PZPZlf:hover,
+.vIifob:hover{
+   @boxShadowHover();
+}
+
+.s1SShd .mDCFkc{
+    @backdrop();
+}
 
 /* Note: T4LgNb is the problem position: relative; 
 
