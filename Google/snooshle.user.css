@@ -4,6 +4,7 @@
 @version        1.0.0
 @description    A new userstyle
 @author         Snesh
+@updateURL	https://github.com/senshastic/Fallsha-Jankyard/raw/refs/heads/main/Google/snooshle.user.css
 @preprocessor	less
 @var select		gradType    "Gradient style" ["animated:Animated*", "flouss: Static", "nouss:None"]
 @var checkbox	grain "Grainy texture" 1
