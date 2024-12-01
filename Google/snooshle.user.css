@@ -5,7 +5,6 @@
 @description    A new userstyle
 @author         Snesh
 @preprocessor	less
-@updateURL		https://github.com/senshastic/Gitsha/raw/refs/heads/main/css/gitsha.user.css
 @var select		gradType    "Gradient style" ["animated:Animated*", "flouss: Static", "nouss:None"]
 @var select		mosaicType    "Mosaic style" ["pink:Lollipop Pink", "citrus: Flaming Citrus", "berry:Electric Berry", "ocean:Cyber Ocean*", "forest:Electric Forest", "twilight:Neon Twilight", "drama:Dark Queen", "xmas:Christmas", "neon:Neon Yellow", "nouss:None"]
 @var select		mosaicAnim    "Mosaic animation" ["wave:Wave", "diagonal:Diagonal", "trippy: Trippy", "arches: Arches", "balloon: Balloons", "ripple: Ripples*", "noanim:None"]
