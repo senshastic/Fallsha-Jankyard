@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           Googlesha
 @namespace      google.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    A new userstyle
 @author         Snesh
-@updateURL	https://github.com/senshastic/Fallsha-Jankyard/raw/refs/heads/main/Google/snooshle.user.css
 @preprocessor	less
+@updateURL		https://github.com/senshastic/Fallsha-Jankyard/raw/refs/heads/main/Google/snooshle.user.css
 @var select		gradType    "Gradient style" ["animated:Animated*", "flouss: Static", "nouss:None"]
 @var checkbox	grain "Grainy texture" 1
 @var color   	gradcolor1 "Gradient Color 1" rgb(1, 1, 30)
@@ -756,7 +756,8 @@ td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 25"] .SJajHc.NVbCr {
 body.EllDfe,
 .LVal7b,
 .tX9u1b:hover,
-.REySof{
+.REySof,
+.IFmkIb.IFmkIb, .lIHVNe.lIHVNe{
     background: transparent !important;
 }
 
@@ -792,6 +793,30 @@ button[jsname="xpqF6b"]:hover,
 
 .s1SShd .mDCFkc{
     @backdrop();
+}
+
+/*ANCHOR [REVIEWS MAPS] */
+
+.KnSn4,
+a.ab_button, a.ab_button:visited,
+[jsname="uxAMZ"],
+.bTLhlf {
+     background: transparent !important;
+}
+
+a.ab_button:hover, a.ab_button:visited:hover{
+
+    @buttonsHover();
+}
+
+a.ab_button, a.ab_button:visited,
+.immersive-container,
+.YoOupc.UxY8gd,
+.NUTAPc, .EnboWc{
+    @backdrop();
+}
+.iHM8f{
+     @backdropSimpler();
 }
 
 /* Note: T4LgNb is the problem position: relative; 
