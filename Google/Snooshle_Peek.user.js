@@ -1,15 +1,11 @@
 // ==UserScript==
 // @name         Snooshle Peek
 // @namespace    Violentmonkey Scripts
-// @version      2.3
-// @description  Adds live previews for links in Google search results: Reddit links use the Reddit API, others use an iframe.
+// @version      3.0
+// @description  Adds live previews for links in Google search results with a whoosh and bounce effect. Reddit links use the Reddit API, others use an iframe.
 // @match        https://www.google.com/*
 // @match        https://www.google.fr/*
-// @downloadURL https://github.com/senshastic/snesh-betterer-google/raw/refs/heads/main/js/Snooshle_Peek.user.js
-// @updateURL   https://github.com/senshastic/snesh-betterer-google/raw/refs/heads/main/js/Snooshle_Peek.user.js
-// @icon        https://cdn.discordapp.com/emojis/1245456048383459439.webp?size=240&quality=lossless
 // @grant        none
-// @author       sensha
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // ==/UserScript==
 
@@ -28,7 +24,7 @@
         }
     }
 
-    // CSS styles for the preview box
+    // CSS styles for the preview box with whoosh and bounce animation
     const previewStyle = `
         #google-preview-box {
             position: absolute;
@@ -37,14 +33,44 @@
             height: 400px;
             border-radius: 12px;
             background-color: rgba(5, 5, 5, 0.18);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0px 10px rgba(255, 255, 255, 0.781);
             backdrop-filter: blur(100px) saturate(110%);
+            -webkit-backdrop-filter: blur(100px);
             border: solid 1px #d0b575;
             padding: 5px;
             z-index: 10000;
             overflow-y: auto;
-            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            scrollbar-width: none;
+            opacity: 0; /* Start invisible */
+            transform: scale(0.7); /* Start smaller */
+            filter: blur(4px); /* Start blurry */
+            animation: none; /* Default state */
+        }
+
+        #google-preview-box.bouncy-whoosh {
+            animation: whooshBounce 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+
+        @keyframes whooshBounce {
+            0% {
+                transform: scale(0.7);
+                opacity: 0;
+                filter: blur(4px);
+            }
+            50% {
+                transform: scale(1.1); /* Slight overscale for bounce effect */
+                opacity: 0.9;
+                filter: blur(2px);
+            }
+            80% {
+                transform: scale(0.98); /* Bounce back slightly */
+                opacity: 1;
+                filter: blur(1px);
+            }
+            100% {
+                transform: scale(1); /* Final scale */
+                opacity: 1;
+                filter: blur(0);
+            }
         }
 
         #google-preview-box::-webkit-scrollbar {
@@ -87,12 +113,39 @@
     previewBox.id = "google-preview-box";
     document.body.appendChild(previewBox);
 
-    // Position the preview box near the cursor
+    // Position the preview box near the cursor, ensuring it stays within the viewport
     function positionPreviewBox(event) {
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const previewWidth = 600; // Match CSS width
+        const previewHeight = 400; // Match CSS height
+
+        let top = event.pageY + 15; // Below the cursor
+        let left = event.pageX + 15; // Right of the cursor
+
+        // Ensure the box doesn't overflow the viewport
+        if (top + previewHeight > viewportHeight + window.scrollY) {
+            top = event.pageY - previewHeight - 15; // Move above the cursor
+        }
+        if (left + previewWidth > viewportWidth + window.scrollX) {
+            left = event.pageX - previewWidth - 15; // Move to the left of the cursor
+        }
+
         $("#google-preview-box").css({
-            top: event.pageY + 15 + "px",
-            left: event.pageX + 15 + "px",
+            top: `${top}px`,
+            left: `${left}px`,
         });
+    }
+
+    // Show the preview box with whoosh and bounce animation
+    function showPreviewBox() {
+        const previewBox = $("#google-preview-box");
+
+        // Reset and trigger the animation
+        previewBox.removeClass("bouncy-whoosh").css("display", "block");
+        setTimeout(() => {
+            previewBox.addClass("bouncy-whoosh");
+        }, 10); // Small delay to ensure animation triggers
     }
 
     // Fetch and display Reddit post content
@@ -134,14 +187,16 @@
                     `);
 
                     positionPreviewBox(event);
-                    $("#google-preview-box").show();
+                    showPreviewBox();
                 } else {
-                    $("#google-preview-box").html("<p>Error fetching Reddit content.</p>").show();
+                    $("#google-preview-box").html("<p>Error fetching Reddit content.</p>");
+                    showPreviewBox();
                 }
             })
             .catch((error) => {
                 console.error("Error fetching Reddit content:", error);
-                $("#google-preview-box").html("<p>Error loading preview.</p>").show();
+                $("#google-preview-box").html("<p>Error loading preview.</p>");
+                showPreviewBox();
             });
     }
 
@@ -152,7 +207,7 @@
         $("#google-preview-box").html(`<iframe src="${url}" style="width: 100%; height: 100%; border: none;"></iframe>`);
 
         positionPreviewBox(event);
-        $("#google-preview-box").show();
+        showPreviewBox();
     }
 
     // Determine preview type based on URL
@@ -170,7 +225,7 @@
     function hidePreviewWithDelay() {
         disappearanceTimeout = setTimeout(() => {
             if (!isMouseInsidePreview) {
-                $("#google-preview-box").hide();
+                $("#google-preview-box").css("display", "none");
             }
         }, 1000);
     }
