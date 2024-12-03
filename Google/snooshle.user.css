@@ -18,7 +18,7 @@
 
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://www.google.") {
+@-moz-document regexp("^https://([a-zA-Z0-9-]+\\.)*google\\.[a-zA-Z]{3}(/|$).*") {
 
 
 
@@ -725,9 +725,17 @@ td:not(.d6cvqb.BBwThe) .fl[aria-label="Page 25"] .SJajHc.NVbCr {
 .nfSF8e.hdtb-tl-sel,
 .ddlshare-dialog,
 .ea0Lbe,
+.EHzcec,
 .f6GA0{
     @backdrop();
 }
+
+
+.nz9sqb.EHzcec .LVal7b,
+.LVal7b {
+    background: transparent !important;
+}
+
 
 .f6F9Be.TrMVnc,
 .c93Gbe{
@@ -818,6 +826,24 @@ a.ab_button, a.ab_button:visited,
 .iHM8f{
      @backdropSimpler();
 }
+
+g-inner-card{
+    @backdrop();
+}
+
+.kLhEKe{
+    @disappear();
+}
+
+.sr9hec.OvQkSb.s3IB3{
+    @backdropSimpler();
+}
+
+
+/*ANCHOR [FIX MODALS] */
+
+
+
 
 /* Note: T4LgNb is the problem position: relative; 
 
