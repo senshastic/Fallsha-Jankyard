@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Sneshpedia
 @namespace      github.com/openstyles/stylus
-@version        1.0.2
+@version        1.0.3
 @description    A new userstyle
 @author         Snesh
 @preprocessor	less
@@ -1064,7 +1064,8 @@ html {
     .wikitable > tr > th, .wikitable > * > tr > th,
     .catlinks,
     html.skin-theme-clientpref-os .metadata:not(.notheme),
-    table{
+    table,
+    #vector-page-titlebar-toc-label {
         @backdrop();
         border: 1px solid @creamColor;
     }
@@ -1149,65 +1150,10 @@ pre:not(.inline)::before {
 
 
 
-/* acrylic + pastel rgb footer */ 
-
-.footer_d8e2d0 {
-    background: linear-gradient(135deg, 
-        rgba(255, 183, 197, 0.6),  
-        rgba(255, 223, 186, 0.6),  
-        rgba(255, 249, 196, 0.6),  
-        rgba(202, 255, 191, 0.6),  
-        rgba(186, 244, 255, 0.6),  
-        rgba(206, 186, 255, 0.6)
-    );
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
-    
-    backdrop-filter: blur(15px) saturate(180%);
-    -webkit-backdrop-filter: blur(15px) saturate(180%);
-    
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* misc */ 
-
-.shiki-container {
-    background-color: transparent !important;
-}
 
 
-/* copy button */ 
-.shiki-btn{
-        background-color: rgba(239, 0, 88, 0.493) !important;
-        border-radius: 12px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(100px) saturate(110%);
-        transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        padding: 5px;
-        
-}
-
-.shiki-btn:hover{
-  background-color: rgba(239, 0, 88, 0.619) !important;
-        border-radius: 12px;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.37);
-        backdrop-filter: blur(100px) saturate(110%);
-        -webkit-backdrop-filter: blur(100px);
-        transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        transform: translateY(-4px);
+html.skin-theme-clientpref-night #bandeau-portail{
+    @backdrop();
 }
     
   }
