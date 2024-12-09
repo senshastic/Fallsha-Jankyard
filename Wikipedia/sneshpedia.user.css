@@ -1,12 +1,13 @@
 /* ==UserStyle==
 @name           Sneshpedia
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    A new userstyle
 @author         Snesh
 @preprocessor	less
 @var select		gradType    "Gradient style" ["animated:Animated*", "flouss: Static", "nouss:None"]
-@updateURL		https://github.com/senshastic/Fallsha-Jankyard/raw/refs/heads/main/Google/sneshpedia.user.css
+@var select		mosaicType    "Mosaic style" ["pink:Lollipop Pink", "citrus: Flaming Citrus", "berry:Electric Berry", "ocean:Cyber Ocean*", "forest:Electric Forest", "twilight:Neon Twilight", "drama:Dark Queen", "xmas:Christmas", "neon:Neon Yellow", "nouss:None"]
+@var select		mosaicAnim    "Mosaic animation" ["wave:Wave", "diagonal:Diagonal", "trippy: Trippy", "arches: Arches", "balloon: Balloons", "ripple: Ripples*", "noanim:None"]
 @var checkbox	grain "Grainy texture" 1
 @var color   	gradcolor1 "Gradient Color 1" rgb(8, 19, 54)
 @var color   	gradcolor2 "Gradient Color 2" rgb(26, 58, 102)
@@ -1084,6 +1085,26 @@ html {
         -webkit-backdrop-filter: blur(100px);
         transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         padding: 5px;
+    }
+    
+    .table-na,
+    .thumbinner.multiimageinner {
+        @disappear();
+    }
+    
+    .thumbcaption{
+        @backdrop();
+        border: solid 1px @creamColor;
+    }
+    
+    .thumbimage,
+    .mw-file-element{
+        border-radius: 12px;
+        border: none !important;
+    }
+    
+    html.skin-theme-clientpref-os .mw-parser-output table:not(.notheme) .tmp-color, html.skin-theme-clientpref-os body.ns-0:not(.page-Main_Page) .mw-parser-output table:not(.infobox):not(.navbox-inner):not(.navbox) th[style*="background"]:not([style*="transparent"]):not([style*="inherit"]) a:not(.mw-selflink) {
+        color: white !important;
     }
     
   }
