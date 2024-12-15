@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Slightly better Youtube
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    A new userstyle
 @author         Snesh
 @updateURL      https://github.com/senshastic/CSS-Jankyard/raw/refs/heads/main/Youtube/slightly_better_yt_snesh.user.css
@@ -279,6 +279,10 @@
      div[id="body"]:hover,
      ytd-compact-video-renderer:hover {
          @boxShadowHover();
+     }
+     
+     #dialog{
+        @backdrop();
      }
      
  }
