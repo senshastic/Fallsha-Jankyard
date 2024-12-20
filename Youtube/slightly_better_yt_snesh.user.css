@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Slightly better Youtube
 @namespace      github.com/openstyles/stylus
-@version        1.0.2
+@version        1.0.4
 @description    A new userstyle
 @author         Snesh
 @updateURL      https://github.com/senshastic/CSS-Jankyard/raw/refs/heads/main/Youtube/slightly_better_yt_snesh.user.css
@@ -221,7 +221,8 @@
      div[id="description"],
      button[id="search-icon-legacy"],
      div[id="body"],
-     ytd-compact-video-renderer{
+     ytd-compact-video-renderer,
+     .ytSearchboxComponentSuggestionsContainer {
          @backdrop();
      }
      
