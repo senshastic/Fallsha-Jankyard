@@ -8,8 +8,7 @@
 @preprocessor	less
 
 ==/UserStyle== */
-
-@-moz-document url-prefix("https://www.youtube.com/watch") {
+< @-moz-document url-prefix("https://www.youtube.com/watch") {
     /*SECTION [SNESHLIB - Start] */
     /*ANCHOR [VARIABLES]*/
     @hap				         : url('https://github.com/senshastic/sneshGPT/blob/main/assets/Hap.png?raw=true');
