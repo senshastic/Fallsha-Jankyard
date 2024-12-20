@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           Slightly better Youtube - Fallen version
 @namespace      github.com/openstyles/stylus
-@version        1.0.5
+@version        1.0.6
 @description    A new userstyle
 @author         Snesh
 @updateURL      https://github.com/senshastic/CSS-Jankyard/raw/refs/heads/main/Youtube/slightly_better_yt_fallen.user.css
 @preprocessor	less
 
 ==/UserStyle== */
-< @-moz-document url-prefix("https://www.youtube.com/watch") {
+@-moz-document url-prefix("https://www.youtube.com/watch") {
     /*SECTION [SNESHLIB - Start] */
     /*ANCHOR [VARIABLES]*/
     @hap				         : url('https://github.com/senshastic/sneshGPT/blob/main/assets/Hap.png?raw=true');
