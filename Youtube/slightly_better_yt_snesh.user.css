@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Slightly better Youtube
 @namespace      github.com/openstyles/stylus
-@version        1.0.6
+@version        1.0.7
 @description    A new userstyle
 @author         Snesh
 @updateURL      https://github.com/senshastic/CSS-Jankyard/raw/refs/heads/main/Youtube/slightly_better_yt_snesh.user.css
@@ -291,6 +291,10 @@
 
     #dialog {
         @backdrop();
+    }
+    
+    .ytSearchboxComponentInputBox.ytSearchboxComponentInputBoxDark{
+        background: transparent !important;
     }
 
 }
