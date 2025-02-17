@@ -4,14 +4,12 @@
 @version        1.0.0
 @author         Snesh
 @preprocessor	less
-@var select		gradType    "Gradient style" ["animated:Animated*", "flouss: Static", "nouss:None"]
-@var select		mosaicType    "Mosaic style" ["pink:Lollipop Pink", "citrus: Flaming Citrus", "berry:Electric Berry", "ocean:Cyber Ocean*", "forest:Electric Forest", "twilight:Neon Twilight", "drama:Dark Queen", "xmas:Christmas", "neon:Neon Yellow", "nouss:None"]
-@var select		mosaicAnim    "Mosaic animation" ["wave:Wave", "diagonal:Diagonal", "trippy: Trippy", "arches: Arches", "balloon: Balloons", "ripple: Ripples*", "noanim:None"]
+@var select		gradType    "Gradient style" ["animated:Animated", "flouss: Static*", "nouss:None"]
 @var checkbox	grain "Grainy texture" 1
-@var color   	gradcolor1 "Gradient Color 1" rgb(8, 19, 54)
-@var color   	gradcolor2 "Gradient Color 2" rgb(26, 58, 102)
-@var color   	gradcolor3 "Gradient Color 3" rgb(43, 1, 91)
-@var color   	gradcolor4 "Gradient Color 4" rgb(122, 2, 54)
+@var color   	gradcolor1 "Gradient Color 1" rgb(1, 1, 30)
+@var color   	gradcolor2 "Gradient Color 2" rgb(5, 1, 21)
+@var color   	gradcolor3 "Gradient Color 3" rgb(26, 26, 43)
+@var color   	gradcolor4 "Gradient Color 4" rgb(0, 0, 35)
 ==/UserStyle== */
 @-moz-document url-prefix("https://fortnite.gg") {
 
@@ -917,6 +915,7 @@
     /*ANCHOR [Gradient background options and grain] */
     body when (@gradType =flouss) {
         @gradientBackground();
+        background-attachment: fixed;
     }
 
 
@@ -991,6 +990,12 @@
     .filter.active {
         background: white !important;
     }
+    
+    body::before when (@grain =1) {
+		@noise();
+		z-index: 0 !important;
+	}
+    
     
     
 
