@@ -1,0 +1,16 @@
+:root.theme-dark,
+.theme-rpl {
+  --color-neutral-background: #00000000 !important;
+}
+
+.bg-neutral-background,
+#left-sidebar-container {
+  background-color: #00000000 !important;
+  border: none !important;
+}
+
+shreddit-app,
+body,
+html {
+  background-color: #00000000 !important;
+}
