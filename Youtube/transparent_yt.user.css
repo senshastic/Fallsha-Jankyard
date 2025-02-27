@@ -1,0 +1,10 @@
+:root {
+    --primary-background-color: #00000000 !important;
+    --dark-theme-background-color: #00000000 !important;
+    --yt-spec-base-background: #00000000 !important;
+    --yt-spec-brand-background-solid: #00000000 !important;
+  }
+  
+  html[dark] {
+    background-color: #00000000 !important;
+  }
