@@ -942,8 +942,22 @@ transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .powerswoosh:hover, 
-.product-lockup:hover {
+.product-lockup:hover, 
+.grid-item:hover{
 transform: scale(1.05);
 }
+
+.search-scope-bar__pill-option--right, 
+.search-scope-bar__pill-option {
+@deep();
+transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+border: none !important;
+}
+
+.search-scope-bar__pill-option--selected.svelte-1eom53s.svelte-1eom53s::before{
+ @elevated();
+
+}
+
 
 }
