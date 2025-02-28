@@ -912,7 +912,8 @@ button:hover {
 }
 .css-175oi2r.r-6koalj.r-eqz5dr.r-16y2uox.r-1habvwh.r-cnw61z.r-13qz1uu.r-1ny4l3l.r-1loqt21:hover, 
 [data-testid="trend"]:hover, 
-[data-testid="UserCell"]:hover {
+[data-testid="UserCell"]:hover, 
+.css-175oi2r.r-6koalj.r-eqz5dr.r-16y2uox.r-1habvwh.r-13qz1uu.r-1mkv55d.r-1ny4l3l.r-1loqt21:hover {
     @elevated();
     
     border-radius: 12px !important;
@@ -973,6 +974,12 @@ z-index   : 9999 !important;
 opacity   : 0.99 !important;
 /* Slightly reduced transparency for clarity */
 transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+[role="listbox"], 
+[data-testid="hoverCardParent"], 
+[aria-modal="true"]{
+    @backdrop();
 }
 
 
