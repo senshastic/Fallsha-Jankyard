@@ -982,6 +982,50 @@ transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     @backdrop();
 }
 
+/* Hide the original SVG */
+.css-146c3p1 svg {
+display: none !important;
+}
+
+
+[aria-label="X"] {
+position: relative !important;
+}
+
+/* Add background image using :before */
+[aria-label="X"]::before {
+content: " ";  /* Required for pseudo-elements */
+display: block !important;
+width: 24px !important;   /* Set appropriate width */
+height: 24px !important;  /* Set appropriate height */
+background-image: url('https://github.com/senshastic/sneshGPT/blob/main/assets/Hap.png?raw=true') !important;
+background-size: contain !important;
+background-repeat: no-repeat !important;
+background-position: center !important;
+position: absolute;  /* Ensures it overlays correctly */
+z-index: 9999 !important;
+}
+
+[aria-label="X"]::after {
+content: " ";  /* Required for pseudo-elements */
+display: block !important;
+width: 24px !important;   /* Set appropriate width */
+height: 24px !important;  /* Set appropriate height */
+background-image: url('https://github.com/senshastic/sneshGPT/blob/main/assets/Hap.png?raw=true') !important;
+background-size: contain !important;
+background-repeat: no-repeat !important;
+background-position: center !important;
+position: absolute;  /* Ensures it overlays correctly */
+z-index: 9999 !important;
+}
+[aria-label="X"] {
+    display: block;
+    background-image: @hap !important;
+
+    }
+
+
+
 
 
 }
