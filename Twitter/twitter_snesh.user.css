@@ -983,7 +983,7 @@ transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 /* Hide the original SVG */
-.css-146c3p1 svg {
+[aria-label="X"] {
 display: none !important;
 }
 
