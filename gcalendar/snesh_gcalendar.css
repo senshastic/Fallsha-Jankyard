@@ -977,9 +977,15 @@ button:hover, .ts6Kr:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic:hover, .RW
 
 .UyW9db, .rBpBVc, .p6vobf .sOjuj, .p6vobf.pWJCO .sOjuj, .bf2t7b.F262Ye .H3yh2e, .bf2t7b.F262Ye, 
 .nSCxEf.F262Ye, 
-.UywwFc-vQzf8d {
+.UywwFc-vQzf8d, 
+.o5s4T .w48V4c.F262Ye {
     color: @creamColor !important;
 }
+
+.w48V4c.F262Ye, 
+.nSCxEf.F262Ye, body.geSgge .nSCxEf.F262Ye {
+    @backdropSimpler();
+    }
 
 :root{
 --gm3-sys-color-primary: @creamColor !important;
@@ -1040,7 +1046,12 @@ input[jsname="YPqjbf"], .d3Ig7c {
   
   }
 
-[data-stay-in-viewport="false"], .NkK3Fc .M842Cd {
+
+    .DO879e [role="dialog"], {
+        background: transparent;
+    }
+    
+[data-stay-in-viewport="false"], .NkK3Fc .M842Cd, [aria-label="Remove calendar"], [aria-modal="true"]{
             background             :
 url("https://github.com/senshastic/fallsha-zen-mods/blob/main/assets/stardust.png?raw=true"),
 var(--gradient1),
@@ -1086,11 +1097,34 @@ transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         @backdropSimpler();
     }
     
-    .DO879e [role="dialog"], {
+    
+
+    .rdgVoe{
+        margin-bottom: 12px !important;
+    }
+    
+    /* calendar creation */ 
+    
+    .xWId8e, .cAYGed.KKjvXb .Ioup7e, .cAYGed.KKjvXb .BMQm1d{
+        @backdropSimpler();
+    }
+    .MDfQ7{
         background: transparent !important;
     }
     
-    .rdgVoe{
-        margin-bottom: 12px !important;
+    .cnTo8e{
+        @elevated();
+    }
+    
+    .RpN9Ve:hover{
+        @buttonsHover();
+    }
+    
+    .NNLEff .RuSUmb{
+        @backdrop();
+    }
+    
+    .pIQtMd, .AZW99{
+        background: transparent !important;
     }
 }
