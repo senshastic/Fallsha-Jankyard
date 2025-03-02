@@ -992,6 +992,7 @@ button:hover, .ts6Kr:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic:hover, .RW
     --gm3-sys-color-on-surface: @creamColor !important;
     --cal-sys-color-now-indicator: @creamColor !important;
     --gm3-sys-color-on-primary: @creamColor !important;
+    --boq-chrometransition-background: transparent !important;
 }
 
 .uVnp9b, .rGFpCd {
@@ -1124,7 +1125,24 @@ transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         @backdrop();
     }
     
-    .pIQtMd, .AZW99{
+    .pIQtMd, .AZW99, .gssb_m, .Gxjp0b, 
+    .Kk7lMc-ae3xF {
         background: transparent !important;
     }
+    
+    
+    /* tried to find contact page 
+    .Kk7lMc-ae3xF, .Kk7lMc-ae3xF-bN97Pc-LYNcwc{
+    background: red !important;
+    }   
+    */
+    
+    
+    /* search bar */ 
+    
+    .NkK3Fc.NkK3Fc.NkK3Fc form[role="search"], .CcsDpe .gssb_e, .CcsDpe .gssb_e .ASO_SUGGESTIONS_CONTAINER, .BYXlo {
+        @backdropSimpler();
+    }
+    
+    
 }
