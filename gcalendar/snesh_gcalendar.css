@@ -1067,4 +1067,30 @@ transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     [aria-label="Weeks in advance for notification"]{
         padding: -10px !important;
     }
+    
+    /* evenement creation */ 
+    
+    /* event coloring 
+    .KF4T6b{
+        @backdrop();
+        color: @creamColor !important;
+    }
+    
+    */
+   
+    .mR2qle{
+        @backdrop();
+    }
+    
+     .kma42e {
+        @backdropSimpler();
+    }
+    
+    .DO879e [role="dialog"], {
+        background: transparent !important;
+    }
+    
+    .rdgVoe{
+        margin-bottom: 12px !important;
+    }
 }
