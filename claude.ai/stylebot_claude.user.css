@@ -14,3 +14,16 @@ body::before {
 
 }
 
+.bg-accent-pro-100, .bg-text-200 {
+    @deep();
+    background-image: url("https://raw.githubusercontent.com/senshastic/sneshGPT/main/assets/senshasip_big.png") !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-color: transparent !important;
+    color: transparent !important;
+    font-size: 0 !important;
+    min-width: 24px !important;
+    min-height: 24px !important;
+    display: block !important;
+  }
