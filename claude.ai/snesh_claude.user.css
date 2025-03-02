@@ -1193,7 +1193,8 @@ code,
     color: black !important;
 }
 
-#radix-\:r87\:{
+#radix-\:r87\:, 
+[aria-labelledby="radix-:r5jh:"] {
     @deep();
   background: 
     linear-gradient(120deg,
