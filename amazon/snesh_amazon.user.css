@@ -928,13 +928,18 @@ background-color: transparent !important;
     .octopus-pc-category-card-v2, 
     .dcl-container, 
     .dcl-container .dcl-container-inner, 
-    ._badgeMessage_1frb3_10 {
+    ._badgeMessage_1frb3_10, 
+    #navFooter.navLeftFooter .navFooterBackToTop,
+    #navFooter.navLeftFooter, 
+    ._p13n-zg-banner-landing-page-footer_style_zgListTypeDescription__DW6ej {
         background-color: transparent !important;
         border: none !important; 
     }
     
     .maple-banner__image, 
-    .a-divider.a-divider-section .a-divider-inner {
+    .a-divider.a-divider-section .a-divider-inner,
+    #navFooter.navLeftFooter .navFooterDescLine, 
+    #navFooter.navLeftFooter .navFooterCopyright {
     display:none !important;
     }
     body, .a-color-base, h2, a {
@@ -1068,8 +1073,8 @@ border: none !important;
     div.bg-no-repeat {
         background-image: none !important;
     }
-
-    body {
-        background-color: transparent!important;
-      }
+    
+      body {
+    background-color: transparent!important;
+  } 
 }
