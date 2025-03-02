@@ -1239,5 +1239,11 @@ a.text-text-300, .text-accent-pro-000{
 
 }
 
+a.absolute:hover, 
+ul.flex > li > a:hover{
+    @deep();
+}
+
+
 
 }
