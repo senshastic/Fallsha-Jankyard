@@ -979,7 +979,38 @@ transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 [role="listbox"], 
 [data-testid="hoverCardParent"], 
 [aria-modal="true"]{
-    @backdrop();
+        @deep();
+background: 
+linear-gradient(120deg,
+  rgba(50, 45, 55, 0.82) 0%,
+  rgba(60, 55, 65, 0.82) 25%,
+  rgba(70, 62, 72, 0.82) 50%,
+  rgba(80, 70, 80, 0.82) 75%),
+linear-gradient(60deg,
+  rgba(85, 65, 75, 0.1) 0%,
+  rgba(75, 65, 80, 0.1) 50%,
+  rgba(65, 60, 75, 0.1) 100%),
+radial-gradient(circle at 25% 25%, 
+  rgba(110, 100, 115, 0.08) 0%, 
+  rgba(80, 70, 85, 0.08) 50%, 
+  rgba(60, 50, 65, 0.08) 100%),
+repeating-linear-gradient(45deg, 
+  rgba(70, 60, 70, 0.02) 0px, 
+  rgba(70, 60, 70, 0.02) 1px, 
+  transparent 1px, 
+  transparent 8px),
+repeating-linear-gradient(135deg, 
+  rgba(70, 60, 70, 0.02) 0px, 
+  rgba(70, 60, 70, 0.02) 1px, 
+  transparent 1px, 
+  transparent 8px),
+repeating-radial-gradient(circle at 50% 50%,
+  rgba(80, 70, 80, 0.01) 0px,
+  rgba(80, 70, 80, 0.01) 1px,
+  transparent 1px,
+  transparent 10px) !important;
+background-attachment: fixed, fixed, fixed, fixed, fixed, fixed !important;
+background-size: cover, cover, cover, 10px 10px, 10px 10px, 20px 20px !important;
 }
 
 /* Hide the original SVG */
