@@ -165,6 +165,38 @@
         z-index: -1 !important;
         opacity: 0.23 !important;
     }
+    
+        @brushedalu: {
+        content: "" !important;
+        background: url("https://github.com/senshastic/fallsha-zen-customizations/blob/main/assets/brushed-alum-dark.png?raw=true") repeat !important;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        pointer-events: none !important;
+        z-index: 9999 !important;
+        opacity: 0.45 !important;
+    }
+    
+    @xv: {
+        content: "" !important;
+        background: url("https://github.com/senshastic/fallsha-zen-customizations/blob/main/assets/xv.png?raw=true") repeat !important;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        pointer-events: none !important;
+        z-index: -1 !important;
+        opacity: 0.45 !important;
+    }
 
 
     @boxShadowHover: {
@@ -929,12 +961,49 @@ box-shadow: inset 0px 2px 0px 0px #00000020, inset 0px 2px 8px 0px #00000040 !im
     --accent-secondary-000: @creamColor !important;
     /* --accent-main-200: @creamColor !important; */ 
     }
-    .bg-bg-000, .bg-bg-300:hover, a.inline-flex:hover, [data-testid="share-button"]:hover, button.bg-\[radial-gradient\(ellipse\,_var\(--tw-gradient-stops\)\)\]:nth-child(2):hover, 
+    .bg-bg-300:hover, a.inline-flex:hover, [data-testid="share-button"]:hover, button.bg-\[radial-gradient\(ellipse\,_var\(--tw-gradient-stops\)\)\]:nth-child(2):hover, 
     div.mt-4:nth-child(4) > button:nth-child(1):hover, div.justify-between > div > button:hover, 
     div.pt-1 > div > div > div > div > div > div> pre > div > div > div > button:hover{
         @deep();
     }
     
+.bg-bg-000 {
+  @deep();
+  background: 
+    linear-gradient(120deg,
+      rgba(50, 45, 55, 0.82) 0%,
+      rgba(60, 55, 65, 0.82) 25%,
+      rgba(70, 62, 72, 0.82) 50%,
+      rgba(80, 70, 80, 0.82) 75%),
+    linear-gradient(60deg,
+      rgba(85, 65, 75, 0.1) 0%,
+      rgba(75, 65, 80, 0.1) 50%,
+      rgba(65, 60, 75, 0.1) 100%),
+    radial-gradient(circle at 25% 25%, 
+      rgba(110, 100, 115, 0.08) 0%, 
+      rgba(80, 70, 85, 0.08) 50%, 
+      rgba(60, 50, 65, 0.08) 100%),
+    repeating-linear-gradient(45deg, 
+      rgba(70, 60, 70, 0.02) 0px, 
+      rgba(70, 60, 70, 0.02) 1px, 
+      transparent 1px, 
+      transparent 8px),
+    repeating-linear-gradient(135deg, 
+      rgba(70, 60, 70, 0.02) 0px, 
+      rgba(70, 60, 70, 0.02) 1px, 
+      transparent 1px, 
+      transparent 8px),
+    repeating-radial-gradient(circle at 50% 50%,
+      rgba(80, 70, 80, 0.01) 0px,
+      rgba(80, 70, 80, 0.01) 1px,
+      transparent 1px,
+      transparent 10px) !important;
+  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed !important;
+  background-size: cover, cover, cover, 10px 10px, 10px 10px, 20px 20px !important;
+}
+
+
+
     .bg-bg-300, .shadow, a.inline-flex, [data-testid="share-button"], button.bg-\[radial-gradient\(ellipse\,_var\(--tw-gradient-stops\)\)\]:nth-child(2), 
     div.mt-4:nth-child(4) > button:nth-child(1), 
     div.justify-between > div > button, 
@@ -985,7 +1054,7 @@ background-attachment: fixed, fixed, fixed !important;
 background-size      : 200px, cover, cover !important;
 color                : inherit !important;
 border-radius        : 12px !important;
-border               : 1px solid rgba(208, 181, 117, 0.5) !important;
+border               : none !important;
 box-shadow           :
 inset 0 0 12px rgba(255, 255, 255, 0.35),
 inset 0 0 20px rgba(255, 255, 255, 0.20) !important;
@@ -1030,15 +1099,25 @@ code, kbd, pre, samp{
 }
 
 .prismjs.code-block__code {
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 1em;
-  background-color: #01022ea1 !important;
-  overflow: hidden;
-  border-radius: 8px;
+  @deep();
+  background: 
+    linear-gradient(120deg,
+      rgba(10, 18, 30, 0.96) 0%,
+      rgba(15, 25, 40, 0.96) 30%,
+      rgba(20, 32, 50, 0.96) 50%,
+      rgba(25, 38, 60, 0.96) 70%,
+      rgba(30, 45, 70, 0.96) 100%),
+    linear-gradient(60deg,
+      rgba(15, 25, 40, 0.2) 0%,
+      rgba(22, 32, 52, 0.2) 50%,
+      rgba(30, 45, 65, 0.2) 100%),
+    radial-gradient(circle at 25% 25%, 
+      rgba(35, 48, 70, 0.12) 0%, 
+      rgba(25, 38, 60, 0.12) 50%, 
+      rgba(15, 25, 45, 0.12) 100%) !important;
+  background-attachment: fixed, fixed, fixed !important;
+  background-size: cover, cover, cover !important;
 }
-
 
 .prismjs.code-block__code::before{
   content: '';
@@ -1068,15 +1147,39 @@ code,
 }
 
 .bg-bg-100{
- background-color: rgba(0, 7, 30, .95) !important;
-        border-radius: 12px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(100px) saturate(110%);
-        -webkit-backdrop-filter: blur(100px);
-        transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        padding: 5px;
-        
-        }
+  @deep();
+  background: 
+    linear-gradient(120deg,
+      rgba(50, 45, 55, 0.82) 0%,
+      rgba(60, 55, 65, 0.82) 25%,
+      rgba(70, 62, 72, 0.82) 50%,
+      rgba(80, 70, 80, 0.82) 75%),
+    linear-gradient(60deg,
+      rgba(85, 65, 75, 0.1) 0%,
+      rgba(75, 65, 80, 0.1) 50%,
+      rgba(65, 60, 75, 0.1) 100%),
+    radial-gradient(circle at 25% 25%, 
+      rgba(110, 100, 115, 0.08) 0%, 
+      rgba(80, 70, 85, 0.08) 50%, 
+      rgba(60, 50, 65, 0.08) 100%),
+    repeating-linear-gradient(45deg, 
+      rgba(70, 60, 70, 0.02) 0px, 
+      rgba(70, 60, 70, 0.02) 1px, 
+      transparent 1px, 
+      transparent 8px),
+    repeating-linear-gradient(135deg, 
+      rgba(70, 60, 70, 0.02) 0px, 
+      rgba(70, 60, 70, 0.02) 1px, 
+      transparent 1px, 
+      transparent 8px),
+    repeating-radial-gradient(circle at 50% 50%,
+      rgba(80, 70, 80, 0.01) 0px,
+      rgba(80, 70, 80, 0.01) 1px,
+      transparent 1px,
+      transparent 10px) !important;
+  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed !important;
+  background-size: cover, cover, cover, 10px 10px, 10px 10px, 20px 20px !important;
+}
         
         body {
   background-color: transparent !important;
@@ -1085,5 +1188,56 @@ code,
   --bg-100: transparent !important;
   --bg-200: transparent !important;
 }
+
+#Field-nameInput{
+    color: black !important;
+}
+
+#radix-\:r87\:{
+    @deep();
+  background: 
+    linear-gradient(120deg,
+      rgba(50, 45, 55, 0.82) 0%,
+      rgba(60, 55, 65, 0.82) 25%,
+      rgba(70, 62, 72, 0.82) 50%,
+      rgba(80, 70, 80, 0.82) 75%),
+    linear-gradient(60deg,
+      rgba(85, 65, 75, 0.1) 0%,
+      rgba(75, 65, 80, 0.1) 50%,
+      rgba(65, 60, 75, 0.1) 100%),
+    radial-gradient(circle at 25% 25%, 
+      rgba(110, 100, 115, 0.08) 0%, 
+      rgba(80, 70, 85, 0.08) 50%, 
+      rgba(60, 50, 65, 0.08) 100%),
+    repeating-linear-gradient(45deg, 
+      rgba(70, 60, 70, 0.02) 0px, 
+      rgba(70, 60, 70, 0.02) 1px, 
+      transparent 1px, 
+      transparent 8px),
+    repeating-linear-gradient(135deg, 
+      rgba(70, 60, 70, 0.02) 0px, 
+      rgba(70, 60, 70, 0.02) 1px, 
+      transparent 1px, 
+      transparent 8px),
+    repeating-radial-gradient(circle at 50% 50%,
+      rgba(80, 70, 80, 0.01) 0px,
+      rgba(80, 70, 80, 0.01) 1px,
+      transparent 1px,
+      transparent 10px) !important;
+  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed !important;
+  background-size: cover, cover, cover, 10px 10px, 10px 10px, 20px 20px !important;
+}
+
+a.text-text-300, .text-accent-pro-000{
+    @backdrop();
+}
+
+
+
+.bg-accent-pro-100, .bg-text-200 {
+  @deep();
+
+}
+
 
 }
