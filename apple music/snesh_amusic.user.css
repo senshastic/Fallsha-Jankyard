@@ -959,5 +959,32 @@ border: none !important;
 
 }
 
+/* applem-no borders */
+
+:root{
+--labelDivider: none !important;
+--playerDropShadow2: none !important;
+--playerInnerShadow: none !important;
+--selectionColor:rgba(0, 7, 30, .19) !important;
+}
+
+
+/* applem-transparency */
+body, .navigation, amp-chrome-player::before{
+background-color: transparent !important;
+}
+
+.songs-list-row--alt.svelte-113if15.svelte-113if15{
+@deep();
+}
+
+.songs-list-row--alt.svelte-113if15.svelte-113if15:hover{
+@background: rgba(0, 7, 30, .19) !important;
+}
+
+footer{
+display: none !important;
+}
+
 
 }
