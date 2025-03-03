@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Slightly better Youtube
 @namespace      github.com/openstyles/stylus
-@version        1.0.7
+@version        1.0.8
 @description    A new userstyle
 @author         Snesh
 @updateURL      https://github.com/senshastic/CSS-Jankyard/raw/refs/heads/main/Youtube/slightly_better_yt_snesh.user.css
@@ -210,6 +210,21 @@
             background-position: 200% 50%;
         }
     }
+    
+      @deep:{
+    background-color: rgba(5, 5, 5, .18) !important;
+backdrop-filter: blur(150px) !important; 
+box-shadow: inset 0px 2px 0px 0px #00000020, inset 0px 2px 8px 0px #00000040 !important;
+  }
+  
+  @elevated:{
+          box-shadow: 0px 2px 0px 0px #FFFFFF0f, 
+              0px 2px 8px 0px #00000040,
+              inset 0px 8px 8px 0px #FFFFFF07 !important;
+  outline: 1px solid #ffffff10 !important;
+  outline-offset: -1px !important;
+  background-color: transparent !important;
+  }
 
     /*!SECTION [SNESHLIB - End]*/
 
@@ -231,9 +246,44 @@
     }
 
     .ytSearchboxComponentSuggestionsContainer {
-        @backdropSimpler();
+            @deep();
+  background: 
+    linear-gradient(120deg,
+      rgba(50, 45, 55, 0.82) 0%,
+      rgba(60, 55, 65, 0.82) 25%,
+      rgba(70, 62, 72, 0.82) 50%,
+      rgba(80, 70, 80, 0.82) 75%),
+    linear-gradient(60deg,
+      rgba(85, 65, 75, 0.1) 0%,
+      rgba(75, 65, 80, 0.1) 50%,
+      rgba(65, 60, 75, 0.1) 100%),
+    radial-gradient(circle at 25% 25%, 
+      rgba(110, 100, 115, 0.08) 0%, 
+      rgba(80, 70, 85, 0.08) 50%, 
+      rgba(60, 50, 65, 0.08) 100%),
+    repeating-linear-gradient(45deg, 
+      rgba(70, 60, 70, 0.02) 0px, 
+      rgba(70, 60, 70, 0.02) 1px, 
+      transparent 1px, 
+      transparent 8px),
+    repeating-linear-gradient(135deg, 
+      rgba(70, 60, 70, 0.02) 0px, 
+      rgba(70, 60, 70, 0.02) 1px, 
+      transparent 1px, 
+      transparent 8px),
+    repeating-radial-gradient(circle at 50% 50%,
+      rgba(80, 70, 80, 0.01) 0px,
+      rgba(80, 70, 80, 0.01) 1px,
+      transparent 1px,
+      transparent 10px) !important;
+  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed !important;
+  background-size: cover, cover, cover, 10px 10px, 10px 10px, 20px 20px !important;
         border-radius: 0 0 12px 12px !important;
         margin-top   : -3px;
+    }
+    
+    div.ytSuggestionComponentSuggestion:hover{
+        @deep();
     }
 
     #chips-wrapper.ytd-feed-filter-chip-bar-renderer {
@@ -284,9 +334,8 @@
         border: 1px solid var(--ytd-searchbox-legacy-border-color);
     }
 
-    div[id="body"]:hover,
-    ytd-compact-video-renderer:hover {
-        @boxShadowHover();
+    div[id="body"]:hover {
+        @deep();
     }
 
     #dialog {
@@ -296,5 +345,57 @@
     .ytSearchboxComponentInputBox.ytSearchboxComponentInputBoxDark{
         background: transparent !important;
     }
+    
+    #guide-content{
+        margin-top: 1.4px !important;
+    }
+
+
+ytd-masthead[is-watch-page][dark]:not([theater]):not([fullscreen]) #background.ytd-masthead{
+    opacity: 1 !important;
+}
+
+yt-lockup-view-model.ytd-item-section-renderer{
+padding: 10px;
+}
+
+yt-lockup-view-model.ytd-item-section-renderer:hover {
+   
+    border-radius: 12px;
+    @elevated();
+}
+
+ytd-rich-item-renderer:hover {
+transform: scale(1.05);
+border-radius: 12px;
+
+}
+
+body::before {
+	content: "" !important;
+	background: url("https://github.com/senshastic/fallsha-zen-customizations/blob/main/assets/brushed-alum-dark.png?raw=true") repeat !important;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	position: fixed;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	pointer-events: none !important;
+	z-index: -1 !important;
+	opacity: 0.45 !important;
+
+}
+
+/* buttons */ 
+
+#chip-container{
+    @elevated();
+}
+
+
+#chip-container:hover, #endpoint:hover{
+    @deep();
+}
 
 }

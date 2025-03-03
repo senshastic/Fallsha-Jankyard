@@ -8,3 +8,7 @@
   html[dark] {
     background-color: #00000000 !important;
   }
+
+  #container.ytd-searchbox {
+    background-color: #00000000 !important;
+  }
