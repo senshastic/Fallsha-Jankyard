@@ -895,6 +895,21 @@
             filter: blur(0);
         }
     }
+    
+            @deep:{
+    background-color: rgba(5, 5, 5, .18) !important;
+backdrop-filter: blur(150px) !important; 
+box-shadow: inset 0px 2px 0px 0px #00000020, inset 0px 2px 8px 0px #00000040 !important;
+  }
+  
+  @elevated:{
+          box-shadow: 0px 2px 0px 0px #FFFFFF0f, 
+              0px 2px 8px 0px #00000040,
+              inset 0px 8px 8px 0px #FFFFFF07 !important;
+  outline: 1px solid #ffffff10 !important;
+  outline-offset: -1px !important;
+  background-color: transparent !important;
+  }
 
     /*!SECTION [SNESHLIB - End]*/
     :root {
@@ -973,10 +988,16 @@
     }
 
     shreddit-post {
-        @backdrop();
+        @elevated();
+        padding: 10px !important;
     }
     shreddit-post:hover {
-        @boxShadowHover();
+        @deep();
+    }
+    
+    shreddit-comment:hover{
+        @deep();
+        border-radius: 12px;
     }
 
     shreddit-post-share-button {
