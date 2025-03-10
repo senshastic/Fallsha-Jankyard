@@ -1194,7 +1194,8 @@ code,
 }
 
 #radix-\:r87\:, 
-[aria-labelledby="radix-:r5jh:"] {
+[aria-labelledby="radix-:r5jh:"], 
+#radix-\:r3q\: {
     @deep();
   background: 
     linear-gradient(120deg,
