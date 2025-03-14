@@ -979,7 +979,8 @@ article:hover,
 
 [aria-label="Grok"], 
 [data-testid="GrokDrawerHeader"], 
-[aria-label="Abonnez‑vous à Premium"]{
+[aria-label="Abonnez‑vous à Premium"], 
+[aria-label="Subscribe to Premium"] {
     display: none !important;
 }
 
