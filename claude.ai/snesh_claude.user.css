@@ -1485,3 +1485,15 @@ ul.flex > li > div:hover{
 .z-dropdown{
       @newBackdrop();
     }
+
+
+.pr-6{
+    @backdrop();
+}
+
+
+.pr-6:hover{
+    @deep();
+}
+
+
