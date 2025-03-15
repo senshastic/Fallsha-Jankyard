@@ -1044,5 +1044,13 @@ body::before {
 }
 
 
+.section--alternate.svelte-1yxl12k.svelte-1yxl12k {
+  background-color: transparent !important;
+}
+
+.songs-list-row--alt.svelte-1th7508.svelte-1th7508{
+    @deep();
+}
+
 
 }
