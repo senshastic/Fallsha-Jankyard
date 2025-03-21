@@ -1100,7 +1100,18 @@ background-color: #000 !important;
 
 }
 
+.r-11d23sj > div:nth-child(1){
+        background: black !important;
+}
 
+div.r-hdaws3:nth-child(1){
+background: black !important;
+}
+
+.r-11d23sj > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1), 
+.r-16d909q > div:nth-child(1) {
+    background: @creamColor !important; 
+}
 
 
 }
