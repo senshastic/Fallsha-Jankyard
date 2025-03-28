@@ -990,32 +990,9 @@ article:hover,
     display: none !important;
 }
 
- :root{ --gradient1                           : linear-gradient(109.6deg,
-  rgba(8, 19, 54, 0.95) 0%,
-  rgba(26, 58, 102, 0.95) 25%,
-  rgba(43, 1, 91, 0.95) 50%,
-  rgba(122, 2, 54, 0.95) 100%);
-  
-  }
-
 [data-testid="Dropdown"]{
-     background             :
-url("https://github.com/senshastic/fallsha-zen-mods/blob/main/assets/stardust.png?raw=true"),
-var(--gradient1),
-linear-gradient(120deg, rgba(15, 25, 50, 0.4) 0%, rgba(25, 60, 100, 0.4) 50%, rgba(50, 10, 80, 0.4) 100%) !important;
-background-attachment: fixed, fixed, fixed !important;
-background-size      : 200px, cover, cover !important;
-color                : inherit !important;
-border-radius        : 12px !important;
-border               : 1px solid rgba(208, 181, 117, 0.5) !important;
-box-shadow           :
-inset 0 0 12px rgba(255, 255, 255, 0.35),
-inset 0 0 20px rgba(255, 255, 255, 0.20) !important;
-overflow  : unset !important;
-z-index   : 9999 !important;
-opacity   : 0.99 !important;
-/* Slightly reduced transparency for clarity */
-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+@newBackdrop();
+@deep();
 }
 
 [role="listbox"], 
