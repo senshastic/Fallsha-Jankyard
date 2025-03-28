@@ -1123,6 +1123,10 @@ color: white !important;
 border-radius: 12px;
 }
 
+.hJgbxL, .cpoPDg {
+ background: transparent !important;
+}
+
 
 button:hover{
  @deep();
