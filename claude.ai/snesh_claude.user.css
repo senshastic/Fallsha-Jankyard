@@ -5,15 +5,7 @@
 @description    A new userstyle
 @author         Snesh
 @preprocessor	less
-@var select		gradType    "Gradient style" ["animated:Animated*", "flouss: Static", "nouss:None"]
-@var select		mosaicType    "Mosaic style" ["pink:Lollipop Pink", "citrus: Flaming Citrus", "berry:Electric Berry", "ocean:Cyber Ocean*", "forest:Electric Forest", "twilight:Neon Twilight", "drama:Dark Queen", "xmas:Christmas", "neon:Neon Yellow", "nouss:None"]
-@var select		mosaicAnim    "Mosaic animation" ["wave:Wave", "diagonal:Diagonal", "trippy: Trippy", "arches: Arches", "balloon: Balloons", "ripple: Ripples*", "noanim:None"]
 @var select		chatIcon    "chat icon" ["default:default","fallen:fallen","sensha:sensha"]
-@var checkbox	grain "Grainy texture" 1
-@var color   	gradcolor1 "Gradient Color 1" rgb(8, 19, 54)
-@var color   	gradcolor2 "Gradient Color 2" rgb(26, 58, 102)
-@var color   	gradcolor3 "Gradient Color 3" rgb(43, 1, 91)
-@var color   	gradcolor4 "Gradient Color 4" rgb(122, 2, 54)
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://claude.ai") {
@@ -74,7 +66,6 @@
 
     .bg-bg-300,
     .shadow,
-    a.inline-flex,
     [data-testid="share-button"],
     button.bg-\[radial-gradient\(ellipse\,_var\(--tw-gradient-stops\)\)\]:nth-child(2),
     div.mt-4:nth-child(4)>button:nth-child(1),
@@ -258,10 +249,6 @@
         background-size      : cover, cover, cover, 10px 10px, 10px 10px, 20px 20px !important;
     }
 
-    a.text-text-300,
-    .text-accent-pro-000 {
-        @backdrop();
-    }
 
     .bg-accent-pro-100,
     .bg-text-200 {
@@ -1477,7 +1464,9 @@
 
     /* Chat avatars */
     .bg-accent-pro-100,
-    .bg-text-200 {
+    .bg-text-200, 
+    div.flex-grow:nth-child(1) > div:nth-child(1) > div, 
+    .cursor-default > div:nth-child(1) > div {
         @deep();
         background-image   : if((@chatIcon =default), @MuuJ, "") !important;
         background-image   : if((@chatIcon =fallen), @fallensip, "") !important;
@@ -1538,16 +1527,6 @@
         background-size      : cover, cover, cover, 10px 10px, 10px 10px, 20px 20px !important;
     }
 
-    .bg-bg-300,
-    .shadow,
-    a.inline-flex,
-    [data-testid="share-button"],
-    button.bg-\[radial-gradient\(ellipse\,_var\(--tw-gradient-stops\)\)\]:nth-child(2),
-    div.mt-4:nth-child(4)>button:nth-child(1),
-    div.justify-between>div>button,
-    div.pt-1>div>div>div>div>div>div>pre>div>div>div>button {
-        @elevated();
-    }
 
     .from-bg-400\/10 {
         margin: 0.10rem;
@@ -1721,10 +1700,7 @@
         background-size      : cover, cover, cover, 10px 10px, 10px 10px, 20px 20px !important;
     }
 
-    a.text-text-300,
-    .text-accent-pro-000 {
-        @backdrop();
-    }
+
 
     .bg-accent-pro-100,
     .bg-text-200 {
@@ -1756,5 +1732,9 @@
 
     .pr-6:hover {
         @deep();
+    }
+    
+    .duration-300{
+        transition-duration: 0s !important;
     }
 }
