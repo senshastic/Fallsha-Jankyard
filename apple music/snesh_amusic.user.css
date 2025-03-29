@@ -7,7 +7,7 @@
 @preprocessor	less
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://music.apple.com", "beta.music.apple.com") {
+@-moz-document url-prefix("https://music.apple.com"), url-prefix("https://beta.music.apple.com") {
     /*SECTION [SNESHLIB - Start] */
 /*ANCHOR [VARIABLES]*/
 @hap				: url('https://github.com/senshastic/sneshGPT/blob/main/assets/Hap.png?raw=true');
