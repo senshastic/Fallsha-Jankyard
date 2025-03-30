@@ -986,6 +986,14 @@ box-shadow: inset 0px 2px 0px 0px #00000020, inset 0px 2px 8px 0px #00000040 !im
   --background-surface-high: transparent !important;
 }
 
+.secondaryButtonPresentation__0be77{
+    @deep();
+}
+
+
+.secondaryButtonPresentation__0be77:hover{
+    @buttonsHover();
+}
 
 .embedWrapper_b7e1cb{
 font-family: 'Monaspace Krypton' !important;
@@ -2351,8 +2359,14 @@ border-radius: 12px !important;
 background-color: rgba(5, 5, 5, .18) !important;
 
 bottom: 1rem !important;
+left: 4.2rem !important;
+width: 78% !important;
 }
 
+
+.visual-refresh .wrapper_ef3116 {
+	margin-bottom: 1rem !important;
+}
 
 [aria-label="Download Apps"], [aria-label="Discover"], 
 .nowPlayingColumn__133bf {
