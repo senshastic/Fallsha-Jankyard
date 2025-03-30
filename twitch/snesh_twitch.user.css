@@ -1053,7 +1053,7 @@ background-color: rgba(5, 5, 5, .18) !important;
 }
 
 
-a {
+a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link) {
 color: @creamColor !important;
 text-decoration: none;
 display: inline-block;
@@ -1062,7 +1062,7 @@ position: relative;
 transition: color 0.3s ease;
 }
 
-a::before {
+a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link)::before {
 content: "";
 height: 2px;
 position: absolute;
@@ -1073,12 +1073,12 @@ transition: width 0.3s ease, background-color 0.3s ease;
 right: 0;
 }
 
-a:hover {
+a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link):hover {
 color: @creamColor;
 text-decoration: none !important;
 }
 
-a:not(.kpHsJz > a):hover::before {
+a:not(.kpHsJz > a, .ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link):hover::before {
 width: 100%;
 right: unset;
 background-color: @creamColor;
