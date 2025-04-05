@@ -1002,6 +1002,12 @@ background-color: transparent !important;
  }
 
 
+@modalElevated:{
+ @elevated();
+border-radius: 12px !important;
+background-color: rgba(5, 5, 5, .18) !important;
+}
+
 
 /*!SECTION [SNESHLIB - End]*/
 html, body, main, .ceLdPR, .jqCeVt, 
@@ -1018,7 +1024,11 @@ html, body, main, .ceLdPR, .jqCeVt,
 .jlCrCH, 
 .gGTkSL, 
 .dkddQa, 
-.hVFxXu {
+.hVFxXu, 
+.support-panel-container, 
+.jToAUV, 
+.jveKWX, 
+.hnGdCZ {
  background: transparent !important;
  
 }
@@ -1053,7 +1063,7 @@ background-color: rgba(5, 5, 5, .18) !important;
 }
 
 
-a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link) {
+a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0) {
 color: @creamColor !important;
 text-decoration: none;
 display: inline-block;
@@ -1062,7 +1072,7 @@ position: relative;
 transition: color 0.3s ease;
 }
 
-a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link)::before {
+a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0)::before {
 content: "";
 height: 2px;
 position: absolute;
@@ -1073,12 +1083,12 @@ transition: width 0.3s ease, background-color 0.3s ease;
 right: 0;
 }
 
-a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link):hover {
+a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0):hover {
 color: @creamColor;
 text-decoration: none !important;
 }
 
-a:not(.kpHsJz > a, .ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link):hover::before {
+a:not(.kpHsJz > a, .ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0):hover::before {
 width: 100%;
 right: unset;
 background-color: @creamColor;
@@ -1132,7 +1142,7 @@ button:hover{
  @deep();
 }
 
-.chat-author__display-name, h1 {
+.chat-author__display-name, h1, .Layout-sc-1xcs6mc-0.xxjeD.side-nav-card__title {
  font-family: 'CC Wild Words' !important;
 }
 
@@ -1145,7 +1155,7 @@ button:hover{
  @deep();
 }
 
-.fVQeCA {  
+.fVQeCA, .iMILUc, .khjbBN{  
 background-color: rgba(51, 12, 110, .42) !important;
 backdrop-filter: blur(8px);
 box-shadow: 0 4px 30px rgba(51, 12, 110, 0.3);
@@ -1154,4 +1164,20 @@ box-shadow: 0 4px 30px rgba(51, 12, 110, 0.3);
 .kelbCv{
 @newBackdrop();
 }
+
+.support-panel, .iibENP{
+ @backdropSimpler();
+}
+
+.kNyuUv{
+ @modalElevated();
+}
+
+[data-a-target="chat-line-message-body"]{
+ font-family: 'Monaspace Xenon' !important;
+}
+
+
+
+
 }
