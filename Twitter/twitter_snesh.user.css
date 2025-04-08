@@ -1094,6 +1094,9 @@ background: black !important;
     @newBackdrop();
 }
 
+.r-1gkfh8e, .r-1472mwg > g > path {
+    color: @creamColor !important;
+}
 
 }
 
