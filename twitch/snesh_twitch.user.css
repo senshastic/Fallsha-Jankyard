@@ -1028,7 +1028,9 @@ html, body, main, .ceLdPR, .jqCeVt,
 .support-panel-container, 
 .jToAUV, 
 .jveKWX, 
-.hnGdCZ {
+.hnGdCZ, 
+.kSagGR, 
+.tw-root--theme-dark .carousel-metadata {
  background: transparent !important;
  
 }
@@ -1169,7 +1171,8 @@ box-shadow: 0 4px 30px rgba(51, 12, 110, 0.3);
  @backdropSimpler();
 }
 
-.kNyuUv{
+.kNyuUv, 
+div.cfnPso {
  @modalElevated();
 }
 
