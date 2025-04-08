@@ -1172,8 +1172,13 @@ box-shadow: 0 4px 30px rgba(51, 12, 110, 0.3);
 }
 
 .kNyuUv, 
-div.cfnPso {
+div.cfnPso{
  @modalElevated();
+}
+
+.home-header-sticky, .home-header-sticky__inner, .home-header-sticky__wrapper, 
+.kwMNMO {
+ @backdrop();
 }
 
 [data-a-target="chat-line-message-body"]{
