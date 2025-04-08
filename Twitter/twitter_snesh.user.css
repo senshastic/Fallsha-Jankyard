@@ -999,6 +999,7 @@ article:hover,
 [data-testid="hoverCardParent"], 
 [aria-modal="true"]{
 @newBackdrop();
+border-radius: 14px !important;
 }
 
 /* Hide the original SVG */
