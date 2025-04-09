@@ -1104,7 +1104,7 @@ background-color: rgba(0, 0, 0, 0.5) !important;
 
 
 
-button:not(.item-name-button, [role="menuitem"], .custom-toggler, .outline-item-link){
+button:not(.item-name-button, [role="menuitem"], .custom-toggler, .outline-item-link, .table-header-sort-btn){
 @elevated();
 margin: 3px !important;
 border-radius: 12px !important;
