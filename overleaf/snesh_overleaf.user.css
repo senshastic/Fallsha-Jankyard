@@ -5,6 +5,7 @@
 @description    A new userstyle
 @author         Snesh
 @preprocessor	less
+@var checkbox	darkmode "Darker Mode" 1
 ==/UserStyle== */
 
 @-moz-document domain("overleaf.com") {
@@ -1250,7 +1251,8 @@ color: white !important;
 .plans-new-design .plans-new-tabs .plans-new-tab .plans-new-tab-link:hover, 
 .plans-new-design .plans-new-tabs .plans-new-tab .plans-new-tab-link, 
 .navbar-default .navbar-nav > li > .nav-link, 
-.dropdown-toggle {
+.dropdown-toggle, 
+.ide-panel-group-resizing {
 background: transparent !important;
 border: none !important;
 }
@@ -1270,7 +1272,7 @@ color: white !important;
 }
 
 
-#ide-root{
+#ide-root when (@darkmode =1) {
 @darkOverlay();
 }
 .toolbar-filetree, .vertical-resize-handle.vertical-resize-handle-enabled:hover, 
