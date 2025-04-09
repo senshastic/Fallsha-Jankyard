@@ -970,11 +970,69 @@ box-shadow: inset 0px 2px 0px 0px #00000020, inset 0px 2px 8px 0px #00000040 !im
         }
       }
 
+
+      @font-face {
+        src: local('CC Wild Words');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        src: local('CMU Concrete');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        src: local('Whitney');
+        font-weight: normal;
+        font-style: normal;
+    }
+   
+    @font-face {
+        src: local('Comic Code');
+        font-weight: normal;
+        font-style: normal;
+    }
+   
+    @font-face {
+        src: local('Monaspace Argon');
+        font-weight: normal;
+        font-style: normal;
+    }
+   
+    @font-face {
+        src: local('Monaspace Krypton');
+        font-weight: normal;
+        font-style: normal;
+    }
+   
+    @font-face {
+        src: local('Monaspace Neon');
+        font-weight: normal;
+        font-style: normal;
+    }
+   
+    @font-face {
+        src: local('Monaspace Radon');
+        font-weight: normal;
+        font-style: normal;
+    }
+   
+    @font-face {
+        src: local('Monaspace Xenon');
+        font-weight: normal;
+        font-style: normal;
+    }
+   
         
   @modalElevated:{
     @elevated();
   border-radius: 12px !important;
   background-color: rgba(5, 5, 5, .18) !important;
+  }
+  
+
+  @darkOverlay: {
+    background-color: rgba(0, 0, 0, 0.5) !important;
   }
   
     
