@@ -1103,7 +1103,7 @@ background-color: rgba(0, 0, 0, 0.5) !important;
 
 
 
-button:not(.item-name-button, [role="menuitem"], .custom-toggler){
+button:not(.item-name-button, [role="menuitem"], .custom-toggler, .outline-item-link){
 @elevated();
 margin: 3px !important;
 border-radius: 12px !important;
@@ -1118,7 +1118,14 @@ color: white !important;
 border: none !important;
 }
 
+.outline-item-link-highlight{
+@deep();
+}
 
+
+.outline-item-expand-collapse-btn{
+@newBackdrop();
+}
 .current-plan a.current-plan-label {
 color: @creamColor;
 text-decoration: none;
@@ -1149,16 +1156,7 @@ border: none !important;
 color: white !important;
 }
 
-ul.show, 
-.ol-cm-toolbar-overflow, 
-[role="menu"], 
-[role="tooltip"], 
-.modal-content, 
-.ͼ2 .review-tooltip-menu, 
-.review-panel-entry.review-panel-entry-highlighted {
-@newBackdrop();
 
-}
 
 .modal-content, 
 .modal-body, 
@@ -1187,11 +1185,33 @@ text-decoration: none !important;
 }
 /* modals */ 
 
-.dropdown-item.active{
+ul.show, 
+.ol-cm-toolbar-overflow, 
+[role="menu"], 
+[role="tooltip"], 
+.modal-content, 
+.ͼ2 .review-tooltip-menu, 
+.review-panel-entry.review-panel-entry-highlighted, 
+.dropdown-menu, 
+.plans-new-design .plans-new-group-member-picker .plans-new-group-member-picker-form ul.plans-new-group-member-picker-list {
+@newBackdrop();
+
+}
+
+.dropdown-item.active, 
+.plans-new-design .plans-new-group-member-picker .plans-new-group-member-picker-form li input[type="radio"]:checked + p {
 @deep();
+color: white !important;
+}
+
+.plans-new-design .plans-new-group-member-picker .plans-new-group-member-picker-form li input[type="radio"]:hover + p, 
+.website-redesign-navbar.navbar-default .navbar-nav > li.subdued > a:focus, .website-redesign-navbar.navbar-default .navbar-nav > li.subdued > a:hover {
+ @deep();
 }
 .form-control, 
-.modal-content {
+.modal-content, 
+.gallery .gallery-thumbnail .caption-description, 
+.author-name {
 color: white !important;
 }
 
@@ -1216,10 +1236,29 @@ color: white !important;
 .ͼd .ol-cm-search-input-group .btn.btn,
 .tags-input .tags, 
 .rp-tc-state, 
-.review-panel-resolved-comment {
+.review-panel-resolved-comment, 
+.hotkeys-modal .hotkeys-modal-bottom-text, 
+.affiliations-table-row-highlighted, 
+.website-redesign-navbar.navbar-default .navbar-collapse, 
+.website-redesign-navbar.navbar-default .navbar-nav > li.secondary > a:hover, 
+.website-redesign-navbar.navbar-default .navbar-nav > li.secondary > a, 
+.plans-new-design .plans-new-content, 
+.plans-new-design .plans-new-content::before, 
+.tab-content, 
+.plans-new-design .plans-new-table-section-without-header-row:nth-child(2n+1):not(.plans-new-table-heading-row), 
+.plans-new-design .plans-new-tabs .plans-new-tab.active .plans-new-tab-link, 
+.plans-new-design .plans-new-tabs .plans-new-tab .plans-new-tab-link:hover, 
+.plans-new-design .plans-new-tabs .plans-new-tab .plans-new-tab-link, 
+.navbar-default .navbar-nav > li > .nav-link, 
+.dropdown-toggle {
 background: transparent !important;
 border: none !important;
 }
+
+.plans-new-design .plans-new-table-feature-row:nth-child(2n){
+color: black !important;
+}
+
 
 .cm-gutters {
 background-color: transparent !important;
@@ -1235,7 +1274,8 @@ color: white !important;
 @darkOverlay();
 }
 .toolbar-filetree, .vertical-resize-handle.vertical-resize-handle-enabled:hover, 
-.horizontal-resize-handle.horizontal-resize-handle-enabled:hover{
+.horizontal-resize-handle.horizontal-resize-handle-enabled:hover, 
+.plans-new-design .plans-new-period-switcher-container {
 @modalElevated();
 }
 
@@ -1276,9 +1316,12 @@ scrollbar-color: #ffffff69 transparent !important;  /* thumb and track color */
 
 
 .file-tree ul.file-tree-list li .entity-name:hover, 
-.toggle-switch {
+.toggle-switch, 
+li.secondary > ul > li:hover{
 @deep();
 }
+
+
 
 div.ol-cm-math > mjx-container > svg, 
 .table-generator {
@@ -1299,6 +1342,15 @@ padding-right: 0 !important;
 @deep();
 }
 
+.left-menu{
+@newBackdrop();
+border: none !important;
+}
+
+.left-menu .h4, .left-menu h4 {
+border: none !important;
+}
+
 
 /* make this damn button more seeable */ 
 
@@ -1307,7 +1359,8 @@ background: @creamColor !important;
 color: black !important;
 }
 
-.custom-toggler::after {
+.custom-toggler::after, 
+.notification-content {
 color: black !important;
 }
 
@@ -1338,5 +1391,21 @@ border: none !important;
 .review-panel-resolved-comment-quoted-text{
 @elevated();
 }
+
+.left-menu ul.nav a .material-symbols, .left-menu ul.nav a .material-symbols, .left-menu ul.nav a .material-symbols, 
+.left-menu ul.nav .left-menu-button .material-symbols, .left-menu ul.nav .left-menu-button .material-symbols {
+color: white !important;
+}
+
+.left-menu .left-menu-setting:focus-within, .left-menu .left-menu-setting:hover {
+@deep();
+}
+
+.pagination > .active > span:hover, 
+.navbar-default .navbar-nav > li > .nav-link:hover {
+    @deep();
+color: white !important;
+}
+
 
 }
