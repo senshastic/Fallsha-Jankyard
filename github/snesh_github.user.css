@@ -1166,13 +1166,6 @@ div[itemscope][itemtype="http://schema.org/Organization"] when (@gradType =nouss
     @gradientAnimation();
 }
 
-
-
-
-.gisthead::before when (@grain =1) {
-    @noise();
-    z-index: 0 !important;
-}
 /* Dashboard */
 
 .TimelineItem-badge{
