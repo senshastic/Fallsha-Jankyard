@@ -9,6 +9,7 @@
 @var select		gradType    "Gradient style" ["animated:Animated*", "flouss: Static", "nouss:None"]
 @var select		mosaicType    "Mosaic style" ["pink:Lollipop Pink", "citrus: Flaming Citrus", "berry:Electric Berry", "ocean:Cyber Ocean*", "forest:Electric Forest", "twilight:Neon Twilight", "drama:Dark Queen", "xmas:Christmas", "neon:Neon Yellow", "nouss:None"]
 @var select		mosaicAnim    "Mosaic animation" ["wave:Wave", "diagonal:Diagonal", "trippy: Trippy", "arches: Arches", "balloon: Balloons", "ripple: Ripples*", "noanim:None"]
+@var checkbox	grain "Grainy texture" 1
 @var color   	gradcolor1 "Gradient Color 1" rgba(8, 19, 54, 0.7)
 @var color   	gradcolor2 "Gradient Color 2" rgba(17, 62, 123, .4)
 @var color   	gradcolor3 "Gradient Color 3" rgba(43, 65, 189, 0.4)
@@ -1166,6 +1167,13 @@ div[itemscope][itemtype="http://schema.org/Organization"] when (@gradType =nouss
     @gradientAnimation();
 }
 
+
+
+
+.gisthead::before when (@grain =1) {
+    @noise();
+    z-index: 0 !important;
+}
 /* Dashboard */
 
 .TimelineItem-badge{
@@ -1957,6 +1965,7 @@ button[aria-label="Filter"] {
 /*ANCHOR [REPO LIST] */
 .col-12.d-flex.flex-justify-between.width-full.py-4.border-bottom.color-border-muted:hover {
     @deep();
+    background-color: rgba(5, 5, 5, .42) !important;
 }
 
 .col-12.d-flex.flex-justify-between.width-full.py-4.border-bottom.color-border-muted {
@@ -1964,8 +1973,8 @@ button[aria-label="Filter"] {
     
     background-color: rgba(5, 5, 5, .42) !important;
     border: none !important;
-    margin-top: 4px !important;
-    padding: 1rem !important;
+    padding-left: 1rem !important;
+    
 }
 
 .border-bottom.color-border-muted.py-3 {
