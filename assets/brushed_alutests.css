@@ -1,0 +1,1078 @@
+
+/* this is a pretty version without the lines */ 
+
+@newBackdrop:{
+    position: relative !important;
+    /* Box shadow with increased depth for stronger contrast */
+    box-shadow: inset 0px 2px 20px 0px rgba(0, 0, 0, 0.45) !important;
+    overflow: hidden !important;
+    
+    /* Darker ultra-metallic base gradient with enhanced contrast */
+    background: linear-gradient(135deg,
+      rgba(20, 25, 35, 0.78) 0%,
+      rgba(40, 45, 60, 0.74) 20%,
+      rgba(60, 65, 80, 0.70) 35%,
+      rgba(80, 85, 100, 0.66) 50%,
+      rgba(60, 65, 80, 0.70) 65%,
+      rgba(40, 45, 60, 0.74) 80%,
+      rgba(20, 25, 35, 0.78) 100%) !important;
+    
+    /* Random-like animation for the background */
+    animation: randomShift 15s ease-in-out infinite alternate !important;
+    
+    /* Enhanced metallic texture layer with more subtle grain */
+    &::before {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background-image: 
+        repeating-linear-gradient(43deg, 
+          rgba(255, 255, 255, 0.01) 0px, 
+          rgba(255, 255, 255, 0.07) 1px, 
+          rgba(255, 255, 255, 0.01) 2px, 
+          rgba(255, 255, 255, 0.05) 3px,
+          rgba(255, 255, 255, 0.01) 4px,
+          rgba(255, 255, 255, 0.06) 5px) !important;
+      animation: randomTexture1 13s ease-in-out infinite !important;
+      pointer-events: none !important;
+      opacity: 0.85 !important;
+    }
+    
+    /* Second metallic texture layer with reduced intensity */
+    &::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background-image: 
+        repeating-linear-gradient(-37deg, 
+          transparent 0px, 
+          rgba(255, 255, 255, 0.03) 2px, 
+          rgba(255, 255, 255, 0.01) 3px, 
+          rgba(255, 255, 255, 0.05) 5px,
+          rgba(255, 255, 255, 0.01) 7px) !important;
+      animation: randomTexture2 17s ease-in-out infinite !important;
+      pointer-events: none !important;
+      opacity: 0.85 !important;
+    }
+    
+    /* Circular brushed aluminum highlights with slightly enhanced contrast */
+    &::before {
+      content: '' !important;
+      position: absolute !important;
+      top: -30% !important;
+      left: -30% !important;
+      width: 160% !important;
+      height: 160% !important;
+      background: 
+        radial-gradient(circle at 35% 35%, rgba(165, 170, 180, 0.30) 0%, rgba(140, 145, 155, 0.22) 15%, rgba(255, 255, 255, 0) 25%),
+        radial-gradient(circle at 65% 60%, rgba(155, 160, 170, 0.28) 0%, rgba(135, 140, 150, 0.20) 12%, rgba(255, 255, 255, 0) 22%),
+        radial-gradient(circle at 50% 75%, rgba(145, 150, 160, 0.26) 0%, rgba(125, 130, 140, 0.18) 10%, rgba(255, 255, 255, 0) 18%),
+        radial-gradient(circle at 25% 45%, rgba(160, 165, 175, 0.29) 0%, rgba(140, 145, 155, 0.20) 11%, rgba(255, 255, 255, 0) 20%),
+        radial-gradient(circle at 75% 25%, rgba(150, 155, 165, 0.27) 0%, rgba(130, 135, 145, 0.19) 10%, rgba(255, 255, 255, 0) 19%) !important;
+      animation: circularHighlights 27s linear infinite !important;
+      pointer-events: none !important;
+      opacity: 0.88 !important;
+    }
+    
+    /* Enhanced brushed metal effect with reduced brightness */
+    &::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background: 
+        repeating-linear-gradient(67deg,
+          rgba(255, 255, 255, 0.01) 0px,
+          rgba(255, 255, 255, 0.04) 1px,
+          rgba(255, 255, 255, 0.01) 2px,
+          rgba(255, 255, 255, 0.05) 3px,
+          rgba(255, 255, 255, 0.01) 4px,
+          rgba(255, 255, 255, 0.03) 5px) !important;
+      animation: randomBrush 19s ease-in-out infinite !important;
+      pointer-events: none !important;
+      opacity: 0.9 !important;
+    }
+    
+    /* Add a subtle vignette effect to darken areas between circles */
+    &::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background: 
+        radial-gradient(ellipse at center, 
+          rgba(0, 0, 0, 0) 30%, 
+          rgba(0, 0, 0, 0.15) 70%, 
+          rgba(0, 0, 0, 0.25) 100%) !important;
+      pointer-events: none !important;
+      opacity: 0.75 !important;
+    }
+    
+    /* Background shift animation */
+    @keyframes randomShift {
+      0% {
+        background-position: 0% 0%;
+      }
+      25% {
+        background-position: 37% 12%;
+      }
+      50% {
+        background-position: 23% 67%;
+      }
+      75% {
+        background-position: 81% 34%;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+    
+    /* Random-like movement for first texture layer */
+    @keyframes randomTexture1 {
+      0% {
+        background-position: 0px 0px;
+      }
+      20% {
+        background-position: 17px 23px;
+      }
+      40% {
+        background-position: 29px 11px;
+      }
+      60% {
+        background-position: 13px 37px;
+      }
+      80% {
+        background-position: 41px 7px;
+      }
+      100% {
+        background-position: 30px 30px;
+      }
+    }
+    
+    /* Random-like movement for second texture layer */
+    @keyframes randomTexture2 {
+      0% {
+        background-position: 0px 0px;
+      }
+      16% {
+        background-position: -23px 17px;
+      }
+      33% {
+        background-position: -7px 31px;
+      }
+      50% {
+        background-position: -33px 5px;
+      }
+      67% {
+        background-position: -15px 27px;
+      }
+      83% {
+        background-position: -37px 13px;
+      }
+      100% {
+        background-position: -30px 30px;
+      }
+    }
+    
+    /* Circular highlight animation with brushed aluminum effect */
+    @keyframes circularHighlights {
+      0% {
+        transform: translateX(0%) translateY(0%) scale(1) skewX(0deg);
+      }
+      25% {
+        transform: translateX(5%) translateY(-8%) scale(1.03) skewX(1deg);
+      }
+      50% {
+        transform: translateX(-3%) translateY(-12%) scale(0.97) skewX(-1deg);
+      }
+      75% {
+        transform: translateX(-7%) translateY(-3%) scale(1.02) skewX(0.5deg);
+      }
+      100% {
+        transform: translateX(0%) translateY(0%) scale(1) skewX(0deg);
+      }
+    }
+    
+    /* Random-like brushed metal animation */
+    @keyframes randomBrush {
+      0% {
+        background-position: 0px 0px;
+      }
+      14% {
+        background-position: 7px 13px;
+      }
+      28% {
+        background-position: 13px 4px;
+      }
+      43% {
+        background-position: 4px 9px;
+      }
+      57% {
+        background-position: 9px 2px;
+      }
+      71% {
+        background-position: 2px 11px;
+      }
+      85% {
+        background-position: 11px 7px;
+      }
+      100% {
+        background-position: 0px 0px;
+      }
+    }
+    
+    /* Cross-hatch pattern movement */
+    @keyframes crossHatch {
+      0% {
+        background-position: 0px 0px, 0px 0px;
+      }
+      25% {
+        background-position: 5px 10px, -5px -5px;
+      }
+      50% {
+        background-position: 10px 5px, -10px -10px;
+      }
+      75% {
+        background-position: 5px 15px, -15px -5px;
+      }
+      100% {
+        background-position: 0px 0px, 0px 0px;
+      }
+    }
+  }
+        
+       
+
+  /* this one had the cross patterns */ 
+
+  @newBackdrop:{
+    position: relative !important;
+    /* Box shadow with increased depth for stronger contrast */
+    box-shadow: inset 0px 2px 20px 0px rgba(0, 0, 0, 0.45) !important;
+    overflow: hidden !important;
+    
+    /* Darker ultra-metallic base gradient with enhanced contrast */
+    background: linear-gradient(135deg,
+      rgba(20, 25, 35, 0.78) 0%,
+      rgba(40, 45, 60, 0.74) 20%,
+      rgba(60, 65, 80, 0.70) 35%,
+      rgba(80, 85, 100, 0.66) 50%,
+      rgba(60, 65, 80, 0.70) 65%,
+      rgba(40, 45, 60, 0.74) 80%,
+      rgba(20, 25, 35, 0.78) 100%) !important;
+    
+    /* Random-like animation for the background */
+    animation: metalBgRandomShift 15s ease-in-out infinite alternate !important;
+    
+    /* Enhanced metallic texture layer with more subtle grain */
+    &::before {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background-image: 
+        repeating-linear-gradient(43deg, 
+          rgba(255, 255, 255, 0.01) 0px, 
+          rgba(255, 255, 255, 0.07) 1px, 
+          rgba(255, 255, 255, 0.01) 2px, 
+          rgba(255, 255, 255, 0.05) 3px,
+          rgba(255, 255, 255, 0.01) 4px,
+          rgba(255, 255, 255, 0.06) 5px) !important;
+      animation: metalBgRandomTexture1 13s ease-in-out infinite !important;
+      pointer-events: none !important;
+      opacity: 0.85 !important;
+    }
+    
+    /* Second metallic texture layer with reduced intensity */
+    &::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background-image: 
+        repeating-linear-gradient(-37deg, 
+          transparent 0px, 
+          rgba(255, 255, 255, 0.03) 2px, 
+          rgba(255, 255, 255, 0.01) 3px, 
+          rgba(255, 255, 255, 0.05) 5px,
+          rgba(255, 255, 255, 0.01) 7px) !important;
+      animation: metalBgRandomTexture2 17s ease-in-out infinite !important;
+      pointer-events: none !important;
+      opacity: 0.85 !important;
+    }
+    
+    /* Circular brushed aluminum highlights with slightly enhanced contrast */
+    &::before {
+      content: '' !important;
+      position: absolute !important;
+      top: -30% !important;
+      left: -30% !important;
+      width: 160% !important;
+      height: 160% !important;
+      background: 
+        radial-gradient(circle at 35% 35%, rgba(165, 170, 180, 0.30) 0%, rgba(140, 145, 155, 0.22) 15%, rgba(255, 255, 255, 0) 25%),
+        radial-gradient(circle at 65% 60%, rgba(155, 160, 170, 0.28) 0%, rgba(135, 140, 150, 0.20) 12%, rgba(255, 255, 255, 0) 22%),
+        radial-gradient(circle at 50% 75%, rgba(145, 150, 160, 0.26) 0%, rgba(125, 130, 140, 0.18) 10%, rgba(255, 255, 255, 0) 18%),
+        radial-gradient(circle at 25% 45%, rgba(160, 165, 175, 0.29) 0%, rgba(140, 145, 155, 0.20) 11%, rgba(255, 255, 255, 0) 20%),
+        radial-gradient(circle at 75% 25%, rgba(150, 155, 165, 0.27) 0%, rgba(130, 135, 145, 0.19) 10%, rgba(255, 255, 255, 0) 19%) !important;
+      animation: metalBgCircularHighlights 27s linear infinite !important;
+      pointer-events: none !important;
+      opacity: 0.88 !important;
+    }
+    
+    /* Enhanced brushed metal effect with reduced brightness */
+    &::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background: 
+        repeating-linear-gradient(67deg,
+          rgba(255, 255, 255, 0.01) 0px,
+          rgba(255, 255, 255, 0.04) 1px,
+          rgba(255, 255, 255, 0.01) 2px,
+          rgba(255, 255, 255, 0.05) 3px,
+          rgba(255, 255, 255, 0.01) 4px,
+          rgba(255, 255, 255, 0.03) 5px) !important;
+      animation: metalBgRandomBrush 19s ease-in-out infinite !important;
+      pointer-events: none !important;
+      opacity: 0.9 !important;
+    }
+    
+    /* Enhanced cross-hatch metallic texture with subtle shine */
+    &::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background: 
+        linear-gradient(23deg, 
+          transparent 0px, 
+          rgba(255, 255, 255, 0.03) 1px, 
+          transparent 2px) 0px 0px / 10px 10px,
+        linear-gradient(-23deg, 
+          transparent 0px, 
+          rgba(255, 255, 255, 0.03) 1px, 
+          transparent 2px) 0px 0px / 10px 10px,
+        /* Adding the vignette effect to darken between circles */
+        radial-gradient(ellipse at center, 
+          rgba(0, 0, 0, 0) 30%, 
+          rgba(0, 0, 0, 0.15) 70%, 
+          rgba(0, 0, 0, 0.25) 100%) !important;
+      animation: metalBgCrossHatch 31s linear infinite !important;
+      pointer-events: none !important;
+      opacity: 0.85 !important;
+    }
+    
+    /* Background shift animation */
+    @keyframes metalBgRandomShift {
+      0% {
+        background-position: 0% 0%;
+      }
+      25% {
+        background-position: 37% 12%;
+      }
+      50% {
+        background-position: 23% 67%;
+      }
+      75% {
+        background-position: 81% 34%;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+    
+    /* Random-like movement for first texture layer */
+    @keyframes metalBgRandomTexture1 {
+      0% {
+        background-position: 0px 0px;
+      }
+      20% {
+        background-position: 17px 23px;
+      }
+      40% {
+        background-position: 29px 11px;
+      }
+      60% {
+        background-position: 13px 37px;
+      }
+      80% {
+        background-position: 41px 7px;
+      }
+      100% {
+        background-position: 30px 30px;
+      }
+    }
+    
+    /* Random-like movement for second texture layer */
+    @keyframes metalBgRandomTexture2 {
+      0% {
+        background-position: 0px 0px;
+      }
+      16% {
+        background-position: -23px 17px;
+      }
+      33% {
+        background-position: -7px 31px;
+      }
+      50% {
+        background-position: -33px 5px;
+      }
+      67% {
+        background-position: -15px 27px;
+      }
+      83% {
+        background-position: -37px 13px;
+      }
+      100% {
+        background-position: -30px 30px;
+      }
+    }
+    
+    /* Circular highlight animation with brushed aluminum effect */
+    @keyframes metalBgCircularHighlights {
+      0% {
+        transform: translateX(0%) translateY(0%) scale(1) skewX(0deg);
+      }
+      25% {
+        transform: translateX(5%) translateY(-8%) scale(1.03) skewX(1deg);
+      }
+      50% {
+        transform: translateX(-3%) translateY(-12%) scale(0.97) skewX(-1deg);
+      }
+      75% {
+        transform: translateX(-7%) translateY(-3%) scale(1.02) skewX(0.5deg);
+      }
+      100% {
+        transform: translateX(0%) translateY(0%) scale(1) skewX(0deg);
+      }
+    }
+    
+    /* Random-like brushed metal animation */
+    @keyframes metalBgRandomBrush {
+      0% {
+        background-position: 0px 0px;
+      }
+      14% {
+        background-position: 7px 13px;
+      }
+      28% {
+        background-position: 13px 4px;
+      }
+      43% {
+        background-position: 4px 9px;
+      }
+      57% {
+        background-position: 9px 2px;
+      }
+      71% {
+        background-position: 2px 11px;
+      }
+      85% {
+        background-position: 11px 7px;
+      }
+      100% {
+        background-position: 0px 0px;
+      }
+    }
+    
+    /* Cross-hatch pattern movement with vignette effect */
+    @keyframes metalBgCrossHatch {
+      0% {
+        background-position: 0px 0px, 0px 0px, 0 0;
+      }
+      25% {
+        background-position: 5px 10px, -5px -5px, 0 0;
+      }
+      50% {
+        background-position: 10px 5px, -10px -10px, 0 0;
+      }
+      75% {
+        background-position: 5px 15px, -15px -5px, 0 0;
+      }
+      100% {
+        background-position: 0px 0px, 0px 0px, 0 0;
+      }
+    }
+  }
+
+  /* blur version, no animation */ 
+
+  @newBackdrop:{
+    position: relative !important;
+    box-shadow: inset 0px 2px 20px 0px rgba(0, 0, 0, 0.45) !important;
+    overflow: hidden !important;
+    
+    /* Darker base gradient with much higher opacity to obscure background */
+    background: linear-gradient(135deg,
+      rgba(20, 25, 35, 0.92) 0%,
+      rgba(40, 45, 60, 0.90) 20%,
+      rgba(60, 65, 80, 0.88) 35%,
+      rgba(80, 85, 100, 0.86) 50%,
+      rgba(60, 65, 80, 0.88) 65%,
+      rgba(40, 45, 60, 0.90) 80%,
+      rgba(20, 25, 35, 0.92) 100%) !important;
+    
+    /* Random-like animation for the background */
+    animation: randomShift 15s ease-in-out infinite alternate !important;
+    
+    /* Faux blur overlay - creates a frosted glass effect */
+    &::before {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background: repeating-linear-gradient(43deg, 
+        rgba(255, 255, 255, 0.04) 0px, 
+        rgba(255, 255, 255, 0.08) 1px, 
+        rgba(255, 255, 255, 0.04) 2px, 
+        rgba(255, 255, 255, 0.06) 3px,
+        rgba(255, 255, 255, 0.04) 4px,
+        rgba(255, 255, 255, 0.07) 5px) !important;
+      filter: blur(1px) !important; /* Adding blur to the noise texture */
+      animation: randomTexture1 13s ease-in-out infinite !important;
+      pointer-events: none !important;
+      opacity: 0.9 !important;
+      mix-blend-mode: overlay !important; /* Creates a better blur-like effect */
+    }
+    
+    /* Second frosted glass layer with finer noise */
+    &::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background-image: 
+        repeating-linear-gradient(-37deg, 
+          rgba(255, 255, 255, 0.02) 0px, 
+          rgba(255, 255, 255, 0.04) 2px, 
+          rgba(255, 255, 255, 0.02) 3px, 
+          rgba(255, 255, 255, 0.05) 5px,
+          rgba(255, 255, 255, 0.02) 7px) !important;
+      filter: blur(0.5px) !important; /* Less blur for the finer texture */
+      animation: randomTexture2 17s ease-in-out infinite !important;
+      pointer-events: none !important;
+      opacity: 0.9 !important;
+    }
+    
+    /* Circular brushed aluminum highlights with frosted effect */
+    &::before {
+      content: '' !important;
+      position: absolute !important;
+      top: -30% !important;
+      left: -30% !important;
+      width: 160% !important;
+      height: 160% !important;
+      background: 
+        radial-gradient(circle at 35% 35%, rgba(165, 170, 180, 0.25) 0%, rgba(140, 145, 155, 0.18) 15%, transparent 25%),
+        radial-gradient(circle at 65% 60%, rgba(155, 160, 170, 0.23) 0%, rgba(135, 140, 150, 0.16) 12%, transparent 22%),
+        radial-gradient(circle at 50% 75%, rgba(145, 150, 160, 0.21) 0%, rgba(125, 130, 140, 0.14) 10%, transparent 18%),
+        radial-gradient(circle at 25% 45%, rgba(160, 165, 175, 0.24) 0%, rgba(140, 145, 155, 0.16) 11%, transparent 20%),
+        radial-gradient(circle at 75% 25%, rgba(150, 155, 165, 0.22) 0%, rgba(130, 135, 145, 0.15) 10%, transparent 19%) !important;
+      animation: circularHighlights 27s linear infinite !important;
+      pointer-events: none !important;
+      opacity: 0.9 !important;
+      filter: blur(0.5px) !important; /* Subtle blur for softer edges */
+    }
+    
+    /* Frosted brushed metal effect */
+    &::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background: 
+        repeating-linear-gradient(67deg,
+          rgba(255, 255, 255, 0.02) 0px,
+          rgba(255, 255, 255, 0.05) 1px,
+          rgba(255, 255, 255, 0.02) 2px,
+          rgba(255, 255, 255, 0.06) 3px,
+          rgba(255, 255, 255, 0.02) 4px,
+          rgba(255, 255, 255, 0.04) 5px) !important;
+      animation: randomBrush 19s ease-in-out infinite !important;
+      pointer-events: none !important;
+      opacity: 0.93 !important;
+      filter: blur(0.7px) !important; /* Another blur layer for depth */
+    }
+    
+    /* Blurred cross-hatch with vignette effect */
+    &::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background: 
+        linear-gradient(23deg, 
+          transparent 0px, 
+          rgba(255, 255, 255, 0.03) 1px, 
+          transparent 2px) 0px 0px / 10px 10px,
+        linear-gradient(-23deg, 
+          transparent 0px, 
+          rgba(255, 255, 255, 0.03) 1px, 
+          transparent 2px) 0px 0px / 10px 10px,
+        /* Dark vignette to simulate depth of the frosted effect */
+        radial-gradient(ellipse at center, 
+          rgba(0, 0, 0, 0.1) 30%, 
+          rgba(0, 0, 0, 0.25) 70%, 
+          rgba(0, 0, 0, 0.35) 100%) !important;
+      animation: crossHatch 31s linear infinite !important;
+      pointer-events: none !important;
+      opacity: 0.9 !important;
+      filter: blur(1px) !important; /* Blur the cross-hatch for frosted look */
+    }
+    
+    /* Extra frosted glass layer to further obscure the background */
+    &::before {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important; 
+      right: 0 !important;
+      bottom: 0 !important;
+      background: rgba(50, 55, 65, 0.3) !important;
+      backdrop-filter: blur(8px) !important; /* Just in case backdrop filters work */
+      filter: blur(2px) !important; /* Fallback blur effect */
+      pointer-events: none !important;
+      opacity: 0.7 !important;
+    }
+    
+    /* Background shift animation */
+    @keyframes randomShift {
+      0% {
+        background-position: 0% 0%;
+      }
+      25% {
+        background-position: 37% 12%;
+      }
+      50% {
+        background-position: 23% 67%;
+      }
+      75% {
+        background-position: 81% 34%;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+    
+    /* Random-like movement for first texture layer */
+    @keyframes randomTexture1 {
+      0% {
+        background-position: 0px 0px;
+      }
+      20% {
+        background-position: 17px 23px;
+      }
+      40% {
+        background-position: 29px 11px;
+      }
+      60% {
+        background-position: 13px 37px;
+      }
+      80% {
+        background-position: 41px 7px;
+      }
+      100% {
+        background-position: 30px 30px;
+      }
+    }
+    
+    /* Random-like movement for second texture layer */
+    @keyframes randomTexture2 {
+      0% {
+        background-position: 0px 0px;
+      }
+      16% {
+        background-position: -23px 17px;
+      }
+      33% {
+        background-position: -7px 31px;
+      }
+      50% {
+        background-position: -33px 5px;
+      }
+      67% {
+        background-position: -15px 27px;
+      }
+      83% {
+        background-position: -37px 13px;
+      }
+      100% {
+        background-position: -30px 30px;
+      }
+    }
+    
+    /* Circular highlight animation with blur effect */
+    @keyframes circularHighlights {
+      0% {
+        transform: translateX(0%) translateY(0%) scale(1) skewX(0deg);
+        filter: blur(0.5px);
+      }
+      25% {
+        transform: translateX(5%) translateY(-8%) scale(1.03) skewX(1deg);
+        filter: blur(0.7px);
+      }
+      50% {
+        transform: translateX(-3%) translateY(-12%) scale(0.97) skewX(-1deg);
+        filter: blur(0.8px);
+      }
+      75% {
+        transform: translateX(-7%) translateY(-3%) scale(1.02) skewX(0.5deg);
+        filter: blur(0.6px);
+      }
+      100% {
+        transform: translateX(0%) translateY(0%) scale(1) skewX(0deg);
+        filter: blur(0.5px);
+      }
+    }
+    
+    /* Random-like brushed metal animation */
+    @keyframes randomBrush {
+      0% {
+        background-position: 0px 0px;
+        filter: blur(0.7px);
+      }
+      14% {
+        background-position: 7px 13px;
+        filter: blur(0.8px);
+      }
+      28% {
+        background-position: 13px 4px;
+        filter: blur(0.9px);
+      }
+      43% {
+        background-position: 4px 9px;
+        filter: blur(0.8px);
+      }
+      57% {
+        background-position: 9px 2px;
+        filter: blur(0.7px);
+      }
+      71% {
+        background-position: 2px 11px;
+        filter: blur(0.8px);
+      }
+      85% {
+        background-position: 11px 7px;
+        filter: blur(0.9px);
+      }
+      100% {
+        background-position: 0px 0px;
+        filter: blur(0.7px);
+      }
+    }
+    
+    /* Cross-hatch pattern movement with blur effect */
+    @keyframes crossHatch {
+      0% {
+        background-position: 0px 0px, 0px 0px, 0 0;
+        filter: blur(1px);
+      }
+      25% {
+        background-position: 5px 10px, -5px -5px, 0 0;
+        filter: blur(1.2px);
+      }
+      50% {
+        background-position: 10px 5px, -10px -10px, 0 0;
+        filter: blur(1.5px);
+      }
+      75% {
+        background-position: 5px 15px, -15px -5px, 0 0;
+        filter: blur(1.3px);
+      }
+      100% {
+        background-position: 0px 0px, 0px 0px, 0 0;
+        filter: blur(1px);
+      }
+    }
+  }
+
+
+  /* more opacity version */ 
+
+  @newBackdrop:{
+    position: relative !important;
+    /* Box shadow with increased depth for stronger contrast */
+    box-shadow: inset 0px 2px 20px 0px rgba(0, 0, 0, 0.65) !important;
+    overflow: hidden !important;
+    
+    /* Darker ultra-metallic base gradient with reduced transparency */
+    background: linear-gradient(135deg,
+      rgba(20, 25, 35, 0.95) 0%,
+      rgba(40, 45, 60, 0.92) 20%,
+      rgba(60, 65, 80, 0.90) 35%,
+      rgba(80, 85, 100, 0.88) 50%,
+      rgba(60, 65, 80, 0.90) 65%,
+      rgba(40, 45, 60, 0.92) 80%,
+      rgba(20, 25, 35, 0.95) 100%) !important;
+    
+    /* Random-like animation for the background */
+    animation: randomShift 15s ease-in-out infinite alternate !important;
+    
+    /* Enhanced metallic texture layer with more subtle grain */
+    &::before {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background-image: 
+        repeating-linear-gradient(43deg, 
+          rgba(255, 255, 255, 0.01) 0px, 
+          rgba(255, 255, 255, 0.07) 1px, 
+          rgba(255, 255, 255, 0.01) 2px, 
+          rgba(255, 255, 255, 0.05) 3px,
+          rgba(255, 255, 255, 0.01) 4px,
+          rgba(255, 255, 255, 0.06) 5px) !important;
+      animation: randomTexture1 13s ease-in-out infinite !important;
+      pointer-events: none !important;
+      opacity: 0.9 !important;
+    }
+    
+    /* Second metallic texture layer with reduced intensity */
+    &::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background-image: 
+        repeating-linear-gradient(-37deg, 
+          transparent 0px, 
+          rgba(255, 255, 255, 0.03) 2px, 
+          rgba(255, 255, 255, 0.01) 3px, 
+          rgba(255, 255, 255, 0.05) 5px,
+          rgba(255, 255, 255, 0.01) 7px) !important;
+      animation: randomTexture2 17s ease-in-out infinite !important;
+      pointer-events: none !important;
+      opacity: 0.9 !important;
+    }
+    
+    /* Circular brushed aluminum highlights with slightly enhanced contrast */
+    &::before {
+      content: '' !important;
+      position: absolute !important;
+      top: -30% !important;
+      left: -30% !important;
+      width: 160% !important;
+      height: 160% !important;
+      background: 
+        radial-gradient(circle at 35% 35%, rgba(165, 170, 180, 0.35) 0%, rgba(140, 145, 155, 0.28) 15%, rgba(255, 255, 255, 0) 25%),
+        radial-gradient(circle at 65% 60%, rgba(155, 160, 170, 0.33) 0%, rgba(135, 140, 150, 0.26) 12%, rgba(255, 255, 255, 0) 22%),
+        radial-gradient(circle at 50% 75%, rgba(145, 150, 160, 0.31) 0%, rgba(125, 130, 140, 0.24) 10%, rgba(255, 255, 255, 0) 18%),
+        radial-gradient(circle at 25% 45%, rgba(160, 165, 175, 0.34) 0%, rgba(140, 145, 155, 0.27) 11%, rgba(255, 255, 255, 0) 20%),
+        radial-gradient(circle at 75% 25%, rgba(150, 155, 165, 0.32) 0%, rgba(130, 135, 145, 0.25) 10%, rgba(255, 255, 255, 0) 19%) !important;
+      animation: circularHighlights 27s linear infinite !important;
+      pointer-events: none !important;
+      opacity: 0.92 !important;
+    }
+    
+    /* Enhanced brushed metal effect with reduced brightness */
+    &::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background: 
+        repeating-linear-gradient(67deg,
+          rgba(255, 255, 255, 0.01) 0px,
+          rgba(255, 255, 255, 0.04) 1px,
+          rgba(255, 255, 255, 0.01) 2px,
+          rgba(255, 255, 255, 0.05) 3px,
+          rgba(255, 255, 255, 0.01) 4px,
+          rgba(255, 255, 255, 0.03) 5px) !important;
+      animation: randomBrush 19s ease-in-out infinite !important;
+      pointer-events: none !important;
+      opacity: 0.95 !important;
+    }
+    
+    /* Enhanced cross-hatch metallic texture with subtle shine */
+    &::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background: 
+        linear-gradient(23deg, 
+          transparent 0px, 
+          rgba(255, 255, 255, 0.03) 1px, 
+          transparent 2px) 0px 0px / 10px 10px,
+        linear-gradient(-23deg, 
+          transparent 0px, 
+          rgba(255, 255, 255, 0.03) 1px, 
+          transparent 2px) 0px 0px / 10px 10px,
+        /* Adding stronger vignette effect to darken between circles */
+        radial-gradient(ellipse at center, 
+          rgba(0, 0, 0, 0.1) 30%, 
+          rgba(0, 0, 0, 0.25) 70%, 
+          rgba(0, 0, 0, 0.35) 100%) !important;
+      animation: crossHatch 31s linear infinite !important;
+      pointer-events: none !important;
+      opacity: 0.9 !important;
+    }
+    
+    /* Background shift animation */
+    @keyframes randomShift {
+      0% {
+        background-position: 0% 0%;
+      }
+      25% {
+        background-position: 37% 12%;
+      }
+      50% {
+        background-position: 23% 67%;
+      }
+      75% {
+        background-position: 81% 34%;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+    
+    /* Random-like movement for first texture layer */
+    @keyframes randomTexture1 {
+      0% {
+        background-position: 0px 0px;
+      }
+      20% {
+        background-position: 17px 23px;
+      }
+      40% {
+        background-position: 29px 11px;
+      }
+      60% {
+        background-position: 13px 37px;
+      }
+      80% {
+        background-position: 41px 7px;
+      }
+      100% {
+        background-position: 30px 30px;
+      }
+    }
+    
+    /* Random-like movement for second texture layer */
+    @keyframes randomTexture2 {
+      0% {
+        background-position: 0px 0px;
+      }
+      16% {
+        background-position: -23px 17px;
+      }
+      33% {
+        background-position: -7px 31px;
+      }
+      50% {
+        background-position: -33px 5px;
+      }
+      67% {
+        background-position: -15px 27px;
+      }
+      83% {
+        background-position: -37px 13px;
+      }
+      100% {
+        background-position: -30px 30px;
+      }
+    }
+    
+    /* Circular highlight animation with brushed aluminum effect */
+    @keyframes circularHighlights {
+      0% {
+        transform: translateX(0%) translateY(0%) scale(1) skewX(0deg);
+      }
+      25% {
+        transform: translateX(5%) translateY(-8%) scale(1.03) skewX(1deg);
+      }
+      50% {
+        transform: translateX(-3%) translateY(-12%) scale(0.97) skewX(-1deg);
+      }
+      75% {
+        transform: translateX(-7%) translateY(-3%) scale(1.02) skewX(0.5deg);
+      }
+      100% {
+        transform: translateX(0%) translateY(0%) scale(1) skewX(0deg);
+      }
+    }
+    
+    /* Random-like brushed metal animation */
+    @keyframes randomBrush {
+      0% {
+        background-position: 0px 0px;
+      }
+      14% {
+        background-position: 7px 13px;
+      }
+      28% {
+        background-position: 13px 4px;
+      }
+      43% {
+        background-position: 4px 9px;
+      }
+      57% {
+        background-position: 9px 2px;
+      }
+      71% {
+        background-position: 2px 11px;
+      }
+      85% {
+        background-position: 11px 7px;
+      }
+      100% {
+        background-position: 0px 0px;
+      }
+    }
+    
+    /* Cross-hatch pattern movement with vignette effect */
+    @keyframes crossHatch {
+      0% {
+        background-position: 0px 0px, 0px 0px, 0 0;
+      }
+      25% {
+        background-position: 5px 10px, -5px -5px, 0 0;
+      }
+      50% {
+        background-position: 10px 5px, -10px -10px, 0 0;
+      }
+      75% {
+        background-position: 5px 15px, -15px -5px, 0 0;
+      }
+      100% {
+        background-position: 0px 0px, 0px 0px, 0 0;
+      }
+    }
+  }
