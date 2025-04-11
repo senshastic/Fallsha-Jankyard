@@ -1137,5 +1137,15 @@ body::before {
  #container.ytd-searchbox {
    background-color: #00000000 !important;
  }
+ 
+ 
+ 
+ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected] #chip-container.yt-chip-cloud-chip-renderer, yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected] #chip-container.yt-chip-cloud-chip-renderer {
+   color: white !important;
+}
+
+tp-yt-paper-dialog.style-scope{
+   @newBackdrop();
+}
 
 }
