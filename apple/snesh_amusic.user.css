@@ -1103,5 +1103,27 @@ input, textarea {
 }
 
 
+.app-container.is-not-focused .content-scope-bar.svelte-1hzfv5e{
+    @backdropSimpler();
+}
+
+.search-scope-bar__pill-container--small.svelte-rvl2n8.svelte-rvl2n8 {
+	box-shadow: none !important;
+}
+
+.search-scope-bar__pill-container.svelte-rvl2n8.svelte-rvl2n8 {
+	background-color: none !important;
+
+}
+
+div.search-scope-bar__pill-option{
+    margin-right: 1px !important;
+}
+
+
+div.search-input-wrapper form{
+    background: transparent !important;
+
+}
 
 }
