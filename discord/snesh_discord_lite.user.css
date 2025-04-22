@@ -1435,7 +1435,11 @@ background-color: transparent !important;
     box-shadow: inset 0px 2px 0px 0px #00000020, inset 0px 2px 8px 0px #00000040 !important;
     border-radius: 12px !important;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
 }
+.messageListItem__5126c{
+    margin: 0.3rem !important;
+    }
 
 .memberInner__5d473{
     right: 10px !important;
@@ -2457,7 +2461,7 @@ border-radius: 12px !important;
 background-color: rgba(5, 5, 5, .18) !important;
 
 bottom: 1rem !important;
-left: 4.4rem !important;
+left: 4.9rem !important;
 width: 78% !important;
 }
 
