@@ -1148,4 +1148,26 @@ tp-yt-paper-dialog.style-scope{
    @newBackdrop();
 }
 
+#frosted-glass.with-chipbar.ytd-app{
+   background: transparent !important;
+   backdrop-filter: none !important;
+}
+
+.ytSearchboxComponentInputBoxDark, 
+.ytSearchboxComponentSearchButtonDark{
+   @deep();
+   border: none !important;
+}
+
+.ytSearchboxComponentSearchButtonDark{
+   @elevated();
+}
+.ytSearchboxComponentSearchButtonDark:hover{
+   @elevated();
+   @deep();
+}
+
+#container.ytd-masthead{
+   @backdropSimpler();
+}
 }
