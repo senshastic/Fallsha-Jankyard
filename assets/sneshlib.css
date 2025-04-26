@@ -971,12 +971,10 @@ box-shadow: inset 0px 2px 0px 0px #00000020, inset 0px 2px 8px 0px #00000040 !im
       }
 
       .animHoverReact() {
-        transition: transform 0.6s ease;
-        transform-style: preserve-3d; 
     
         
         &:hover {
-            animation: flipAndScale 0.6s forwards;
+            animation: flipAndScale 0.3s forwards;
           }
         
       }
