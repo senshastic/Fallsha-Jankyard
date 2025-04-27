@@ -1041,9 +1041,31 @@ html, body, main, .ceLdPR, .jqCeVt,
  @deep();
 }
 
-.tw-root--theme-dark .chat-room{
- @newBackdrop();
+.tw-root--theme-dark .chat-room, .fiHaCw{
+ @backdrop();
 }
+
+.chat-shell__expanded{
+ @backdrop();
+}
+
+.chat-shell__expanded::before, .chat-shell__expanded::after{
+content              : "" !important;
+background           : @alu;
+background-attachment: fixed;
+background-repeat    : repeat;
+position             : fixed;
+top                  : 0 !important;
+left                 : 0 !important;
+width                : 100% !important;
+height               : 100% !important;
+pointer-events       : none !important;
+z-index              : -1 !important;
+opacity              : 0.45 !important;
+@backdrop();
+}
+
+
 
 .jWHzQH, 
 .jGIUiR, 
@@ -1125,7 +1147,7 @@ opacity              : 0.45 !important;
  @deep();
 }
 
-.jKAcCJ, 
+
 .iWpgDm {
  @newBackdrop();
 }
@@ -1207,6 +1229,45 @@ div.cfnPso,
  @newBackdrop();
 }
 
+.tw-root--theme-dark .emote-grid-section__header-title {
+ background-color: transparent !important;
+}
+
+.gcCIFq, .tw-root--theme-dark .emote-grid-section__balloon-title {
+ background-color: transparent !important;
+}
+
+.Safyo {
+ @backdrop();
+}
+
+.JhXRp{
+     background-color: transparent !important;
+}
+
+.IsUzh, .jHKNLz, .chat-identity-menu__content, .EwYZh {
+ background-color: transparent !important;
+}
+
+.ScBalloonWrapper-sc-14jr088-0, .jKAcCJ{
+ @backdrop();
+}
+
+.jKAcCJ::before, .jKAcCJ::after{
+content              : "" !important;
+background           : @alu;
+background-attachment: fixed;
+background-repeat    : repeat;
+position             : fixed;
+top                  : 0 !important;
+left                 : 0 !important;
+width                : 100% !important;
+height               : 100% !important;
+pointer-events       : none !important;
+z-index              : -1 !important;
+opacity              : 0.45 !important;
+@backdropSimpler();
+}
 
 
 
