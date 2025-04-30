@@ -1075,7 +1075,8 @@ opacity              : 0.45 !important;
 .jWvhBm, 
 .giftExpirationCallout--W1rIF, 
 .krbPCX, 
-.announcement-line {
+.announcement-line, 
+.kMQpTr {
  display: none !important;
 }
 
@@ -1089,7 +1090,7 @@ background-color: rgba(5, 5, 5, .18) !important;
 }
 
 
-a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0, div.jDgJoG > div > a) {
+a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0, div.jDgJoG > div > a, .ScCoreLink-sc-16kq0mq-0.jRnnHH.ScCoreLink-sc-bhsr9c-0.htMMdJ.tw-link, a[data-test-selector="user-avatar-card-link"], a[data-test-selector="home-game-card-link"]) {
 color: @creamColor !important;
 text-decoration: none;
 width: fit-content;
@@ -1097,6 +1098,8 @@ position: relative;
 display: inline-block;
 transition: color 0.3s ease;
 }
+
+
 
 div.jDgJoG > div > a {
 color: @creamColor !important;
@@ -1106,7 +1109,7 @@ position: relative;
 transition: color 0.3s ease;
 }
 
-a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0)::before {
+a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0, a[data-test-selector="user-avatar-card-link"], a[data-test-selector="home-game-card-link"])::before {
 content: "";
 height: 2px;
 position: absolute;
@@ -1117,12 +1120,12 @@ transition: width 0.3s ease, background-color 0.3s ease;
 right: 0;
 }
 
-a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0):hover {
+a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0, a[data-test-selector="user-avatar-card-link"], a[data-test-selector="home-game-card-link"]):hover {
 color: @creamColor;
 text-decoration: none !important;
 }
 
-a:not(.kpHsJz > a, .ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0):hover::before {
+a:not(.kpHsJz > a, .ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0, a[data-test-selector="user-avatar-card-link"], a[data-test-selector="home-game-card-link"]):hover::before {
 width: 100%;
 right: unset;
 background-color: @creamColor;
@@ -1237,7 +1240,8 @@ div.cfnPso,
  background-color: transparent !important;
 }
 
-.Safyo {
+.Safyo, 
+.jUeGHH {
  @backdrop();
 }
 
@@ -1268,6 +1272,7 @@ z-index              : -1 !important;
 opacity              : 0.45 !important;
 @backdropSimpler();
 }
+
 
 
 
