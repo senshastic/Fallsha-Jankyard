@@ -1090,7 +1090,7 @@ background-color: rgba(5, 5, 5, .18) !important;
 }
 
 
-a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0, div.jDgJoG > div > a, .ScCoreLink-sc-16kq0mq-0.jRnnHH.ScCoreLink-sc-bhsr9c-0.htMMdJ.tw-link, a[data-test-selector="user-avatar-card-link"], a[data-test-selector="home-game-card-link"]) {
+a:not(.ScCoreLink-sc-16kq0mq-0.iCWdoq.preview-card-channel-link.tw-link, a.ScCoreButton-sc-ocjdkq-0, div.jDgJoG > div > a, .ScCoreLink-sc-16kq0mq-0.jRnnHH.ScCoreLink-sc-bhsr9c-0.htMMdJ.tw-link, a[data-test-selector="user-avatar-card-link"], a[data-test-selector="home-game-card-link"], a[data-a-target="preview-card-image-link"]) {
 color: @creamColor !important;
 text-decoration: none;
 width: fit-content;
@@ -1098,8 +1098,6 @@ position: relative;
 display: inline-block;
 transition: color 0.3s ease;
 }
-
-
 
 div.jDgJoG > div > a {
 color: @creamColor !important;
@@ -1273,6 +1271,14 @@ opacity              : 0.45 !important;
 @backdropSimpler();
 }
 
+
+/* .gifting-option__ghost-bg-overlay {
+ background-image: url(https://static-cdn.jtvnw.net/subs-image-assets/bg-ghost-purple.svg);
+ height: 100%;
+ opacity: .2;
+ width: 100%;
+}
+*/ 
 
 
 
