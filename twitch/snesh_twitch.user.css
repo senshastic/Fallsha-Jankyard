@@ -1272,14 +1272,22 @@ opacity              : 0.45 !important;
 }
 
 
-/* .gifting-option__ghost-bg-overlay {
- background-image: url(https://static-cdn.jtvnw.net/subs-image-assets/bg-ghost-purple.svg);
- height: 100%;
- opacity: .2;
- width: 100%;
+.home-header-sticky::before, .frPaLE::before {
+ content              : "" !important;
+background           : url(https://static-cdn.jtvnw.net/subs-image-assets/bg-ghost-purple.svg);
+background-attachment: fixed;
+background-repeat    : repeat;
+position             : fixed;
+top                  : 0 !important;
+left                 : 0 !important;
+width                : 100% !important;
+height               : 100% !important;
+pointer-events       : none !important;
+z-index              : -1 !important;
+opacity              : 0.2 !important;
+border-radius: 12px !important;
+@backdropSimpler();
 }
-*/ 
-
 
 
 }
