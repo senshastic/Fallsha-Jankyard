@@ -1093,7 +1093,8 @@ article:hover,
 [aria-label="Grok"], 
 [data-testid="GrokDrawerHeader"], 
 [aria-label="Abonnez‑vous à Premium"], 
-[aria-label="Subscribe to Premium"] {
+[aria-label="Subscribe to Premium"], 
+[data-testid="super-upsell-UpsellCardRenderProperties"] {
     display: none !important;
 }
 
@@ -1208,6 +1209,20 @@ background: black !important;
 
 .r-1igl3o0 > div > div > div > div > a > div > div {
     color: @creamColor !important;
+}
+
+[data-testid="sidebarColumn"]{
+
+    position: fixed !important;
+    right: 0 !important;
+}
+
+div.r-aqfbo4:nth-child(2) > div:nth-child(1) > div:nth-child(2){
+    top: 0px !important;
+}
+
+html body div#react-root div.css-175oi2r.r-13awgt0.r-12vffkv div.css-175oi2r.r-13awgt0.r-12vffkv div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz main.css-175oi2r.r-16y2uox.r-1wbh5a2.r-1habvwh div.css-175oi2r.r-150rngu.r-16y2uox.r-1wbh5a2.r-1obr2lp div.css-175oi2r.r-aqfbo4.r-16y2uox div.css-175oi2r.r-1oszu61.r-1niwhzg.r-18u37iz.r-16y2uox.r-2llsf.r-13qz1uu.r-1wtj0ep div.css-175oi2r.r-aqfbo4.r-1l8l4mf.r-1jocfgc.r-1udh08x div.css-175oi2r.r-1pi2tsx div.css-175oi2r{
+    margin-top: 0px !important;
 }
 
 }
