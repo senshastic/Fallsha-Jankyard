@@ -1050,6 +1050,7 @@ box-shadow: inset 0px 2px 0px 0px #00000020, inset 0px 2px 8px 0px #00000040 !im
 
 
 
+
 div.r-f8sm7e:nth-child(5) when (@darkmode =1){
     @darkOverlay();
     border-radius: 12px !important;
@@ -1228,6 +1229,20 @@ html body div#react-root div.css-175oi2r.r-13awgt0.r-12vffkv div.css-175oi2r.r-1
 .r-1ifxtd0{
 margin-bottom: 0px !important;
 }
+
+.r-10m9thr:not(div.r-lzsi8w){
+    @darkOverlay();
+}
+
+[data-testid="conversation"]:hover{
+@deep();
+}
+
+[data-testid="DMDrawer"]{
+    @newBackdrop();
+    border-radius: 12px !important;
+}
+
 
 }
 
