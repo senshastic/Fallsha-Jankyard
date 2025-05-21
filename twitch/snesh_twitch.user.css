@@ -1032,7 +1032,10 @@ html, body, main, .ceLdPR, .jqCeVt,
 .kSagGR, 
 .tw-root--theme-dark .carousel-metadata, 
 .irlvFX, 
-.bqwwCP {
+.bqwwCP, 
+.stream-schedule__header, 
+.ciSLQN, 
+.stream-schedule-segment--element {
  background: transparent !important;
  
 }
@@ -1307,5 +1310,12 @@ border-radius: 12px !important;
  z-index: 1000 !important;
 }
 
+.dZdYVB{
+ @deep();
+}
+
+.bnxxru, .ceGsha {
+ @elevated();
+}
 
 }
