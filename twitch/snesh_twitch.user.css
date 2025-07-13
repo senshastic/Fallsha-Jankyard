@@ -1289,4 +1289,8 @@ border-radius: 12px !important;
     @elevated();
 }
 
+.jZQeec > div:nth-child(1){
+    background: transparent !important;
+}
+
 }
