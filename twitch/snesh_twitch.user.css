@@ -2,6 +2,8 @@
 @name           www.twitch.tv
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
+@updateURL	https://github.com/senshastic/Fallsha-Jankyard/raw/refs/heads/main/twitch/snesh_twitch.user.css
+@var checkbox	hideUsername "Hide Username" 0
 @description    A new userstyle
 @author         snesh
 @preprocessor	less
