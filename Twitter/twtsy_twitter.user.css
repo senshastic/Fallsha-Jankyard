@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           x.com dim
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    restore dim style for my pookie baby
 @author         sensha
 @updateURL		https://github.com/senshastic/Fallsha-Jankyard/raw/refs/heads/main/Twitter/twtsy_twitter.user.css
@@ -182,5 +182,12 @@
     /* Scrollbar */
     html {
         scrollbar-color: var(--xdm-border) var(--xdm-bg);
+    }
+    
+    
+    /* update 0.1: private message button color fix */ 
+    
+    .bg-background {
+    background-color: var(--xdm-bg) !important;
     }
 }
