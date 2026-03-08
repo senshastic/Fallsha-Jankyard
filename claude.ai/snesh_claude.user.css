@@ -1577,4 +1577,22 @@ div.min-h-screen  when (@darkmode =1){
     .border-accent-secondary-200{
         border-color: @creamColor !important;;
     }
+    
+    .bg-text-000{   
+        color: black;
+        }
+        
+        
+        .Button_primary__0oSjX {
+  --button-bg: transparent !important;
+  
+  --button-hover-bg: transparent !important;
+  
+}
+
+.Button_primary__0oSjX:hover:not(:disabled) {
+
+@deep();
+}
+
 }
