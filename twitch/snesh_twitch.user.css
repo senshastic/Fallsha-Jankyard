@@ -1171,7 +1171,7 @@ button:hover{
 }
 
 .chat-author__display-name, h1, .Layout-sc-1xcs6mc-0.xxjeD.side-nav-card__title {
-    font-family: 'CC Wild Words' !important;
+    font-family: 'Monaspace Neon' !important;
 }
 
 
@@ -1293,5 +1293,8 @@ border-radius: 12px !important;
 .jZQeec > div:nth-child(1){
     background: transparent !important;
 }
+.xLREO {
 
+@newBackdrop();
+}
 }
